@@ -6,104 +6,23 @@
     <title>填词补文 · 在线练习</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            background: #f5f7fa;
-            padding: 16px;
-            color: #1e2a3a;
-        }
-        .app {
-            max-width: 1400px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 24px;
-            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-            padding: 20px;
-        }
-        h1 {
-            font-size: 1.6rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: #0b2b4a;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-        .subhead {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #e9edf4;
-            padding-bottom: 12px;
-        }
-        .subhead span {
-            color: #4a5b6e;
-            font-size: 0.95rem;
-            background: #eef2f8;
-            padding: 6px 14px;
-            border-radius: 40px;
-        }
-        .main-panel {
-            display: flex;
-            gap: 24px;
-            flex-wrap: wrap;
-        }
+        body { font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; background: #f5f7fa; padding: 16px; color: #1e2a3a; }
+        .app { max-width: 1400px; margin: 0 auto; background: white; border-radius: 24px; box-shadow: 0 12px 30px rgba(0,0,0,0.08); padding: 20px; }
+        h1 { font-size: 1.6rem; font-weight: 600; margin-bottom: 8px; color: #0b2b4a; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+        .subhead { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 20px; border-bottom: 2px solid #e9edf4; padding-bottom: 12px; }
+        .subhead span { color: #4a5b6e; font-size: 0.95rem; background: #eef2f8; padding: 6px 14px; border-radius: 40px; }
+        .main-panel { display: flex; gap: 24px; flex-wrap: wrap; }
         .left-col { flex: 6; min-width: 300px; }
         .right-col { flex: 4; min-width: 300px; }
 
-        /* 文章卡片 */
-        .article-card {
-            background: #fbfdff;
-            border-radius: 20px;
-            padding: 20px;
-            border: 1px solid #e2e9f2;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
-            position: sticky;
-            top: 20px;
-        }
-        .article-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 16px;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .article-header h2 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #0d2e4e;
-        }
-        .translate-btn {
-            background: #eef3fe;
-            border: none;
-            padding: 10px 18px;
-            border-radius: 40px;
-            font-weight: 500;
-            color: #1a4c8c;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.9rem;
-            transition: background 0.2s;
-            box-shadow: 0 2px 6px rgba(0, 70, 150, 0.08);
-            -webkit-tap-highlight-color: transparent;
-        }
+        .article-card { background: #fbfdff; border-radius: 20px; padding: 20px; border: 1px solid #e2e9f2; box-shadow: 0 4px 10px rgba(0,0,0,0.02); position: sticky; top: 20px; }
+        .article-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px; }
+        .article-header h2 { font-size: 1.3rem; font-weight: 600; color: #0d2e4e; }
+        .translate-btn { background: #eef3fe; border: none; padding: 10px 18px; border-radius: 40px; font-weight: 500; color: #1a4c8c; cursor: pointer; display: flex; align-items: center; gap: 6px; font-size: 0.9rem; transition: background 0.2s; box-shadow: 0 2px 6px rgba(0,70,150,0.08); -webkit-tap-highlight-color: transparent; }
         .translate-btn:hover { background: #d9e6ff; }
         .translate-btn.active { background: #1f4e8c; color: white; }
 
-        .para-block {
-            margin-bottom: 18px;
-            border-radius: 16px;
-            padding: 14px 16px;
-            transition: background 0.2s;
-            line-height: 2.1;
-            font-size: 1rem;
-        }
+        .para-block { margin-bottom: 18px; border-radius: 16px; padding: 14px 16px; transition: background 0.2s; line-height: 2.1; font-size: 1rem; }
         .para-block:last-child { margin-bottom: 0; }
         .para-1 { background: #fef9e7; }
         .para-2 { background: #e8f6ef; }
@@ -112,340 +31,70 @@
         .para-5 { background: #e6f2fc; }
         .para-6 { background: #fef1e6; }
 
-        /* 空格槽（填词补文：用户从词库选择字母） */
-        .blank-slot {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 60px;
-            min-height: 28px;
-            padding: 2px 10px;
-            margin: 0 3px;
-            border: 1px dashed #b8cce4;
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.5);
-            color: #a8bdd1;
-            font-weight: 500;
-            font-size: 0.88rem;
-            cursor: pointer;
-            transition: all 0.2s;
-            vertical-align: middle;
-            -webkit-tap-highlight-color: transparent;
-            text-align: center;
-        }
-        .blank-slot:hover {
-            border-color: #1f4e8c;
-            background: #eef3fe;
-            color: #1f4e8c;
-        }
-        .blank-slot.empty {
-            color: #a8bdd1;
-            font-style: italic;
-        }
-        .blank-slot.filled {
-            border-style: solid;
-            border-color: #1f4e8c;
-            background: #eef3fe;
-            color: #1f4e8c;
-            font-weight: 600;
-            font-style: normal;
-            padding: 2px 10px;
-        }
-        .blank-slot.correct {
-            border-color: #1a6f3c;
-            background: #e8f6ef;
-            color: #1a6f3c;
-        }
-        .blank-slot.wrong {
-            border-color: #b13e3e;
-            background: #fde9e9;
-            color: #b13e3e;
-        }
-        .blank-slot.active {
-            box-shadow: 0 0 0 3px rgba(31, 78, 140, 0.25);
-        }
+        .blank-slot { display: inline-flex; align-items: center; justify-content: center; min-width: 70px; min-height: 28px; padding: 2px 10px; margin: 0 3px; border: 1px dashed #b8cce4; border-radius: 8px; background: rgba(255,255,255,0.5); color: #a8bdd1; font-weight: 500; font-size: 0.88rem; cursor: pointer; transition: all 0.2s; vertical-align: middle; -webkit-tap-highlight-color: transparent; text-align: center; }
+        .blank-slot:hover { border-color: #1f4e8c; background: #eef3fe; color: #1f4e8c; }
+        .blank-slot.empty { color: #a8bdd1; font-style: italic; }
+        .blank-slot.filled { border-style: solid; border-color: #1f4e8c; background: #eef3fe; color: #1f4e8c; font-weight: 600; font-style: normal; padding: 2px 10px; }
+        .blank-slot.correct { border-color: #1a6f3c; background: #e8f6ef; color: #1a6f3c; }
+        .blank-slot.wrong { border-color: #b13e3e; background: #fde9e9; color: #b13e3e; }
+        .blank-slot.active { box-shadow: 0 0 0 3px rgba(31,78,140,0.25); }
 
-        /* 词库 */
-        .wordbank-card {
-            margin-top: 20px;
-            background: #ffffff;
-            border-radius: 16px;
-            padding: 16px;
-            border: 1px solid #e2e9f2;
-        }
-        .wordbank-title {
-            font-weight: 600;
-            color: #0d2e4e;
-            margin-bottom: 12px;
-            font-size: 1rem;
-        }
-        .wordbank-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 8px;
-        }
-        .word-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 12px;
-            background: #f9fcff;
-            border: 1px solid #e4ecf5;
-            border-radius: 12px;
-            font-size: 0.92rem;
-            color: #1f3d60;
-            cursor: pointer;
-            transition: all 0.15s;
-            -webkit-tap-highlight-color: transparent;
-        }
-        .word-item:hover {
-            background: #eef3fe;
-            border-color: #b8cce4;
-        }
-        .word-item.selected {
-            background: #1f4e8c;
-            border-color: #1f4e8c;
-            color: white;
-            box-shadow: 0 4px 8px rgba(31, 78, 140, 0.2);
-        }
-        .word-item.used {
-            opacity: 0.35;
-            pointer-events: none;
-        }
-        .word-letter {
-            font-weight: 700;
-            flex-shrink: 0;
-            width: 20px;
-        }
-        .word-text { flex: 1; }
+        .wordbank-card { margin-top: 20px; background: #ffffff; border-radius: 16px; padding: 16px; border: 1px solid #e2e9f2; }
+        .wordbank-title { font-weight: 600; color: #0d2e4e; margin-bottom: 12px; font-size: 1rem; }
+        .wordbank-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+        .word-item { display: flex; align-items: center; gap: 8px; padding: 8px 12px; background: #f9fcff; border: 1px solid #e4ecf5; border-radius: 12px; font-size: 0.92rem; color: #1f3d60; cursor: pointer; transition: all 0.15s; -webkit-tap-highlight-color: transparent; }
+        .word-item:hover { background: #eef3fe; border-color: #b8cce4; }
+        .word-item.selected { background: #1f4e8c; border-color: #1f4e8c; color: white; box-shadow: 0 4px 8px rgba(31,78,140,0.2); }
+        .word-item.used { opacity: 0.35; pointer-events: none; }
+        .word-letter { font-weight: 700; flex-shrink: 0; width: 20px; }
 
-        /* 试题卡片 */
-        .quiz-card {
-            background: #ffffff;
-            border-radius: 20px;
-            padding: 20px;
-            border: 1px solid #e2e9f2;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-        }
-        .quiz-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 16px;
-        }
-        .quiz-header h2 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #0d2e4e;
-        }
-        .quiz-header .info-tags {
-            display: flex;
-            gap: 6px;
-            flex-wrap: wrap;
-        }
-        .quiz-header .info-tags span {
-            background: #eef3fc;
-            color: #1b3b63;
-            padding: 4px 12px;
-            border-radius: 30px;
-            font-size: 0.78rem;
-            font-weight: 500;
-        }
+        .quiz-card { background: #ffffff; border-radius: 20px; padding: 20px; border: 1px solid #e2e9f2; box-shadow: 0 4px 12px rgba(0,0,0,0.02); }
+        .quiz-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+        .quiz-header h2 { font-size: 1.3rem; font-weight: 600; color: #0d2e4e; }
+        .quiz-header .info-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+        .quiz-header .info-tags span { background: #eef3fc; color: #1b3b63; padding: 4px 12px; border-radius: 30px; font-size: 0.78rem; font-weight: 500; }
 
-        .question-wrapper {
-            margin-bottom: 16px;
-            border-radius: 16px;
-            overflow: hidden;
-        }
-        .match-item {
-            padding: 12px 14px;
-            border-radius: 14px;
-            border: 1px solid #e4ecf5;
-            transition: background 0.2s;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .match-item .q-row {
-            display: flex;
-            align-items: baseline;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-        .match-item .q-label {
-            font-weight: 600;
-            color: #0e2f50;
-            background: rgba(255,255,255,0.7);
-            padding: 2px 10px;
-            border-radius: 30px;
-            font-size: 0.82rem;
-            flex-shrink: 0;
-        }
-        .match-item .q-text {
-            font-weight: 500;
-            color: #1a2a3a;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
+        .question-wrapper { margin-bottom: 16px; border-radius: 16px; overflow: hidden; }
+        .match-item { padding: 12px 14px; border-radius: 14px; border: 1px solid #e4ecf5; display: flex; flex-direction: column; gap: 10px; }
+        .match-item .q-row { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+        .match-item .q-label { font-weight: 600; color: #0e2f50; background: rgba(255,255,255,0.7); padding: 2px 10px; border-radius: 30px; font-size: 0.82rem; flex-shrink: 0; }
+        .match-item .q-text { font-weight: 500; color: #1a2a3a; font-size: 0.95rem; line-height: 1.6; }
         .options { display: flex; flex-wrap: wrap; gap: 6px; }
-        .opt {
-            background: #ffffff;
-            border: 1px solid #cfdcec;
-            padding: 6px 12px;
-            border-radius: 40px;
-            font-size: 0.85rem;
-            color: #1f3d60;
-            cursor: pointer;
-            transition: all 0.12s;
-            user-select: none;
-            -webkit-tap-highlight-color: transparent;
-        }
-        .opt.selected {
-            background: #1f4e8c;
-            border-color: #1f4e8c;
-            color: white;
-            box-shadow: 0 4px 8px rgba(31, 78, 140, 0.2);
-        }
-        .opt:active { transform: scale(0.97); }
+        .opt { background: #ffffff; border: 1px solid #cfdcec; padding: 6px 12px; border-radius: 40px; font-size: 0.85rem; color: #1f3d60; cursor: pointer; transition: all 0.12s; user-select: none; -webkit-tap-highlight-color: transparent; }
+        .opt.selected { background: #1f4e8c; border-color: #1f4e8c; color: white; box-shadow: 0 4px 8px rgba(31,78,140,0.2); }
         .opt.disabled { opacity: 0.7; pointer-events: none; }
 
-        .explain-inline {
-            margin-top: 8px;
-            padding: 10px 14px;
-            border-radius: 14px;
-            font-size: 0.9rem;
-            line-height: 1.6;
-            border: 1px solid #e4ecf5;
-            width: 100%;
-        }
-        .explain-inline .ans-line {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 6px;
-            font-weight: 500;
-        }
+        .explain-inline { margin-top: 8px; padding: 10px 14px; border-radius: 14px; font-size: 0.9rem; line-height: 1.6; border: 1px solid #e4ecf5; width: 100%; }
+        .explain-inline .ans-line { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 6px; font-weight: 500; }
         .explain-inline .ans-icon { font-size: 1.1rem; }
-        .explain-inline .ans-tag {
-            background: rgba(217,235,247,0.85);
-            padding: 2px 10px;
-            border-radius: 30px;
-            font-size: 0.82rem;
-            color: #1b4f72;
-        }
+        .explain-inline .ans-tag { background: rgba(217,235,247,0.85); padding: 2px 10px; border-radius: 30px; font-size: 0.82rem; color: #1b4f72; }
         .explain-inline .correct-answer { color: #1a6f3c; font-weight: 600; }
         .explain-inline .wrong-answer { color: #b13e3e; font-weight: 600; }
         .explain-inline .ans-detail { color: #3a5a7a; margin-top: 4px; }
 
-        /* 题目颜色 */
-        .q-color-1  { background: #fef9e7; border-color: #f0e0b0; }
-        .q-color-2  { background: #e8f6ef; border-color: #b8dfc8; }
-        .q-color-3  { background: #f3e8fd; border-color: #d9bdf0; }
-        .q-color-4  { background: #fde9e9; border-color: #f0bfbf; }
-        .q-color-5  { background: #e6f2fc; border-color: #b8d4ee; }
+        .q-color-1 { background: #fef9e7; border-color: #f0e0b0; }
+        .q-color-2 { background: #e8f6ef; border-color: #b8dfc8; }
+        .q-color-3 { background: #f3e8fd; border-color: #d9bdf0; }
+        .q-color-4 { background: #fde9e9; border-color: #f0bfbf; }
+        .q-color-5 { background: #e6f2fc; border-color: #b8d4ee; }
 
-        /* 提交区 */
-        .submit-area {
-            display: flex;
-            gap: 16px;
-            align-items: center;
-            margin-top: 24px;
-            flex-wrap: wrap;
-        }
-        .submit-btn {
-            background: #1f4e8c;
-            color: white;
-            border: none;
-            padding: 12px 32px;
-            border-radius: 40px;
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            box-shadow: 0 8px 18px rgba(31, 78, 140, 0.2);
-            transition: background 0.2s;
-            -webkit-tap-highlight-color: transparent;
-        }
-        .submit-btn:hover { background: #123b6b; }
-        .submit-btn.reset { background: #5b7f9c; box-shadow: 0 8px 18px rgba(91, 127, 156, 0.2); }
-        .submit-btn.reset:hover { background: #466a87; }
-        .score-box {
-            background: #e8f0fe;
-            padding: 10px 22px;
-            border-radius: 40px;
-            font-weight: 600;
-            color: #1a3e70;
-        }
+        .submit-area { display: flex; gap: 16px; align-items: center; margin-top: 24px; flex-wrap: wrap; }
+        .submit-btn { background: #1f4e8c; color: white; border: none; padding: 12px 32px; border-radius: 40px; font-weight: 600; font-size: 1rem; cursor: pointer; box-shadow: 0 8px 18px rgba(31,78,140,0.2); }
+        .submit-btn.reset { background: #5b7f9c; }
+        .score-box { background: #e8f0fe; padding: 10px 22px; border-radius: 40px; font-weight: 600; color: #1a3e70; }
 
-        /* 底部分页器 */
-        .pager-bottom {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 16px;
-            margin-top: 30px;
-            padding: 16px 0 8px;
-            flex-wrap: wrap;
-            border-top: 1px solid #e9edf4;
-        }
-        .pager-bottom button {
-            background: #ffffff;
-            border: 1px solid #cfd9e6;
-            padding: 10px 24px;
-            border-radius: 40px;
-            font-weight: 500;
-            color: #1e3e6e;
-            cursor: pointer;
-            transition: all 0.15s;
-            font-size: 0.95rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-            -webkit-tap-highlight-color: transparent;
-        }
-        .pager-bottom button:hover:not(:disabled) {
-            background: #e8f0fe;
-            border-color: #3b7fc4;
-        }
-        .pager-bottom button:disabled {
-            opacity: 0.4;
-            cursor: not-allowed;
-        }
-        .pager-bottom input {
-            width: 70px;
-            text-align: center;
-            padding: 10px 6px;
-            border: 1px solid #cfd9e6;
-            border-radius: 40px;
-            font-size: 0.95rem;
-            background: white;
-            -moz-appearance: textfield;
-        }
-        .pager-bottom input::-webkit-outer-spin-button,
-        .pager-bottom input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
+        .pager-bottom { display: flex; justify-content: center; align-items: center; gap: 16px; margin-top: 30px; padding: 16px 0 8px; flex-wrap: wrap; border-top: 1px solid #e9edf4; }
+        .pager-bottom button { background: #ffffff; border: 1px solid #cfd9e6; padding: 10px 24px; border-radius: 40px; font-weight: 500; color: #1e3e6e; cursor: pointer; font-size: 0.95rem; }
+        .pager-bottom button:disabled { opacity: 0.4; cursor: not-allowed; }
+        .pager-bottom input { width: 70px; text-align: center; padding: 10px 6px; border: 1px solid #cfd9e6; border-radius: 40px; font-size: 0.95rem; }
 
-        .footnote {
-            margin-top: 16px;
-            font-size: 0.8rem;
-            color: #7a8b9f;
-            text-align: center;
-        }
-        .loading {
-            text-align: center;
-            padding: 60px 20px;
-            color: #4a5b6e;
-            font-size: 1rem;
-        }
+        .footnote { margin-top: 16px; font-size: 0.8rem; color: #7a8b9f; text-align: center; }
+        .loading { text-align: center; padding: 60px 20px; color: #4a5b6e; font-size: 1rem; }
 
         @media (max-width: 800px) {
             .main-panel { flex-direction: column; }
             .article-card { position: static; }
             .app { padding: 14px; }
-            .pager-bottom { gap: 10px; }
-            .pager-bottom button { padding: 8px 16px; font-size: 0.85rem; }
-            .pager-bottom input { width: 55px; padding: 8px 4px; }
-            .blank-slot { min-width: 50px; min-height: 24px; font-size: 0.8rem; padding: 1px 6px; }
             .wordbank-list { grid-template-columns: 1fr; }
         }
     </style>
@@ -460,10 +109,10 @@
 
 <script>
     let currentPage = 0;
-    let userAnswers = [];      // [{ '31': 'A', '32': 'B', ... }, ...]
-    let submitted = [];        // [bool, ...]
-    let activeBlank = null;    // 当前选中的空格编号
-    let translationOn = [];    // [bool, ...]
+    let userAnswers = [];
+    let submitted = [];
+    let activeBlank = null;
+    let translationOn = [];
 
     const app = document.getElementById('app');
     const BLANKS = ['31','32','33','34','35','36','37','38','39','40'];
@@ -478,14 +127,12 @@
         translationOn = cibuExams.map(() => false);
     }
 
-    // 根据字母查找词
     function getWord(exam, letter) {
         if (!letter) return '';
         const w = exam.wordBank.find(item => item.letter === letter);
         return w ? w.word : letter;
     }
 
-    // 渲染空格槽
     function renderBlankSlots(text, exam, answers, isSubmitted, activeBlank) {
         let html = text;
         BLANKS.forEach(k => {
@@ -495,17 +142,14 @@
                 const correctAns = exam.answers[k];
                 let slotClass = 'blank-slot';
                 let slotContent = '';
-
                 if (userAns) {
                     slotClass += ' filled';
-                    // 显示词（而非字母），因为填词补文的核心是填词
                     const word = getWord(exam, userAns);
                     slotContent = `<strong>${userAns}.</strong> ${word}`;
                 } else {
                     slotClass += ' empty';
                     slotContent = `[${k}]`;
                 }
-
                 if (isSubmitted) {
                     if (userAns === correctAns) slotClass += ' correct';
                     else slotClass += ' wrong';
@@ -518,27 +162,9 @@
         return html;
     }
 
-    function hasBlankMarker(text) {
-        return BLANKS.some(k => text.includes(`[${k}]`));
-    }
-
-    // 用选项内容替换标记（用于翻译匹配）
-    function replaceMarkersWithWord(text, exam, answers) {
-        let result = text;
-        BLANKS.forEach(k => {
-            const marker = `[${k}]`;
-            if (result.includes(marker)) {
-                const userAns = answers[k] || exam.answers[k];
-                const word = getWord(exam, userAns);
-                result = result.replace(marker, word);
-            }
-        });
-        return result;
-    }
-
     function render() {
         if (!cibuExams.length) {
-            app.innerHTML = '<div class="loading">⚠️ 题库数据为空，请检查 data-cibu.js</div>';
+            app.innerHTML = '<div class="loading">⚠️ 题库数据为空</div>';
             return;
         }
         const exam = cibuExams[currentPage];
@@ -547,13 +173,10 @@
         const showTrans = translationOn[currentPage];
 
         let correctCount = 0;
-        BLANKS.forEach(k => {
-            if (answers[k] === exam.answers[k]) correctCount++;
-        });
+        BLANKS.forEach(k => { if (answers[k] === exam.answers[k]) correctCount++; });
         const score = (correctCount * 1.5).toFixed(1);
         const totalScore = 15;
 
-        // 左侧文章
         let articleHtml = '';
         articleHtml += `<div class="article-header">`;
         articleHtml += `<h2>${exam.articleTitle}</h2>`;
@@ -564,109 +187,61 @@
 
         exam.passage.forEach((paraText, pIdx) => {
             const colorClass = `para-${(pIdx % 6) + 1}`;
-
-            if (showTrans) {
-                const sentences = paraText.match(/[^.!?]+[.!?]*/g) || [paraText];
-                let sentencesHtml = '';
-                sentences.forEach(sent => {
-                    const trimmed = sent.trim();
-                    if (!trimmed) return;
-                    const filledText = replaceMarkersWithWord(trimmed, exam, answers);
-                    const replacedHtml = renderBlankSlots(trimmed, exam, answers, isSubmitted, activeBlank);
-                    const zh = transDict[filledText] || transDict[trimmed] || '';
-                    sentencesHtml += `<div class="sentence-block">`;
-                    sentencesHtml += `<div class="sentence-line">${replacedHtml}</div>`;
-                    if (zh) sentencesHtml += `<div class="trans-text">${zh}</div>`;
-                    sentencesHtml += `</div>`;
-                });
-                articleHtml += `<div class="para-block ${colorClass}">${sentencesHtml}</div>`;
-            } else {
-                const paraHtml = renderBlankSlots(paraText, exam, answers, isSubmitted, activeBlank);
-                articleHtml += `<div class="para-block ${colorClass}">${paraHtml}</div>`;
-            }
+            const paraHtml = renderBlankSlots(paraText, exam, answers, isSubmitted, activeBlank);
+            articleHtml += `<div class="para-block ${colorClass}">${paraHtml}</div>`;
         });
 
-        // 词库
         let wordbankHtml = '';
         wordbankHtml += `<div class="wordbank-card">`;
         wordbankHtml += `<div class="wordbank-title">📋 词库（点击词填入上方空格）</div>`;
         wordbankHtml += `<div class="wordbank-list">`;
         exam.wordBank.forEach(w => {
             const isUsed = Object.values(answers).includes(w.letter);
-            const selectedClass = isUsed ? 'selected used' : '';
-            wordbankHtml += `<div class="word-item ${selectedClass}" data-letter="${w.letter}" onclick="pickWord('${w.letter}')">`;
-            wordbankHtml += `<span class="word-letter">${w.letter}.</span>`;
-            wordbankHtml += `<span class="word-text">${w.word}</span>`;
+            wordbankHtml += `<div class="word-item ${isUsed ? 'selected used' : ''}" onclick="pickWord('${w.letter}')">`;
+            wordbankHtml += `<span class="word-letter">${w.letter}.</span><span>${w.word}</span>`;
             wordbankHtml += `</div>`;
         });
         wordbankHtml += `</div></div>`;
 
-        // 右侧试题
         let quizHtml = '';
-        quizHtml += `<div class="quiz-header">`;
-        quizHtml += `<h2>📝 填词补文</h2>`;
-        quizHtml += `<div class="info-tags"><span>每题1.5分</span><span>共15分</span></div>`;
-        quizHtml += `</div>`;
+        quizHtml += `<div class="quiz-header"><h2>📝 填词补文</h2><div class="info-tags"><span>每题1.5分</span><span>共15分</span></div></div>`;
 
         BLANKS.forEach((k, qIdx) => {
             const userAns = answers[k];
             const colorClass = `q-color-${(qIdx % 5) + 1}`;
-
-            quizHtml += `<div class="question-wrapper" id="wrapper-${k}">`;
+            quizHtml += `<div class="question-wrapper">`;
             quizHtml += `<div class="match-item ${colorClass}" data-qid="${k}">`;
             quizHtml += `<div class="q-row"><span class="q-label">${k}</span><span class="q-text">请选择填入第 ${k} 空的最佳选项</span></div>`;
             quizHtml += `<div class="options">`;
             exam.wordBank.forEach(w => {
-                const selectedClass = (userAns === w.letter) ? 'selected' : '';
-                const disabledClass = isSubmitted ? 'disabled' : '';
-                quizHtml += `<div class="opt ${selectedClass} ${disabledClass}" data-qid="${k}" data-opt="${w.letter}" onclick="selectOption(this, '${k}', '${w.letter}')" title="${w.word}">${w.letter}</div>`;
+                quizHtml += `<div class="opt ${userAns === w.letter ? 'selected' : ''} ${isSubmitted ? 'disabled' : ''}" onclick="selectOption(this, '${k}', '${w.letter}')" title="${w.word}">${w.letter}</div>`;
             });
             quizHtml += `</div></div>`;
             quizHtml += `<div class="explain-inline ${colorClass}" id="explain-${k}" style="display:none;"></div>`;
             quizHtml += `</div>`;
         });
 
-        // 提交区
         let submitAreaHtml = '';
         if (!isSubmitted) {
-            submitAreaHtml += `<div class="submit-area">`;
-            submitAreaHtml += `<button class="submit-btn" id="submitBtn">提交答案</button>`;
-            submitAreaHtml += `<div class="score-box" id="scoreDisplay">得分：--</div>`;
-            submitAreaHtml += `</div>`;
+            submitAreaHtml = `<div class="submit-area"><button class="submit-btn" id="submitBtn">提交答案</button><div class="score-box">得分：--</div></div>`;
         } else {
-            submitAreaHtml += `<div class="submit-area">`;
-            submitAreaHtml += `<button class="submit-btn reset" id="resetBtn">重新作答</button>`;
-            submitAreaHtml += `<div class="score-box" id="scoreDisplay">得分：${score} / ${totalScore}</div>`;
-            submitAreaHtml += `</div>`;
+            submitAreaHtml = `<div class="submit-area"><button class="submit-btn reset" id="resetBtn">重新作答</button><div class="score-box">得分：${score} / ${totalScore}</div></div>`;
         }
 
         const html = `
             <h1>📘 填词补文</h1>
-            <div class="subhead">
-                <span id="examInfo">${exam.session}真题</span>
-            </div>
+            <div class="subhead"><span>${exam.session}真题</span></div>
             <div class="main-panel">
-                <div class="left-col">
-                    <div class="article-card" id="articleCard">
-                        ${articleHtml}
-                        ${wordbankHtml}
-                    </div>
-                </div>
-                <div class="right-col">
-                    <div class="quiz-card" id="quizCard">
-                        ${quizHtml}
-                        ${submitAreaHtml}
-                    </div>
-                </div>
+                <div class="left-col"><div class="article-card">${articleHtml}${wordbankHtml}</div></div>
+                <div class="right-col"><div class="quiz-card">${quizHtml}${submitAreaHtml}</div></div>
             </div>
             <div class="pager-bottom">
                 <button id="prevBtn" ${currentPage === 0 ? 'disabled' : ''}>← 上一页</button>
-                <input type="number" id="pageInput" min="1" max="${cibuExams.length}" value="${currentPage + 1}" inputmode="numeric">
+                <input type="number" id="pageInput" min="1" max="${cibuExams.length}" value="${currentPage + 1}">
                 <button id="nextBtn" ${currentPage === cibuExams.length - 1 ? 'disabled' : ''}>下一页 →</button>
             </div>
             <div class="footnote">点击空格选中 · 再点击词填入 · 每题1.5分</div>
         `;
-
         app.innerHTML = html;
 
         if (isSubmitted) {
@@ -676,23 +251,10 @@
                 const userAns = answers[k];
                 const correctAns = exam.answers[k];
                 const isCorrect = userAns === correctAns;
-                const icon = isCorrect ? '✅' : '❌';
                 const explanation = exam.explanations[k] || '暂无解析';
                 const correctWord = getWord(exam, correctAns);
-                let detail = '';
-                if (userAns) {
-                    detail = `<span class="${isCorrect ? 'correct-answer' : 'wrong-answer'}">你的答案：${userAns}. ${getWord(exam, userAns)} ${isCorrect ? '✓' : '✗'}</span>`;
-                } else {
-                    detail = `<span class="wrong-answer">未作答</span>`;
-                }
-                explainDiv.innerHTML = `
-                    <div class="ans-line">
-                        <span class="ans-icon">${icon}</span>
-                        <span class="ans-tag">正确答案：${correctAns}. ${correctWord}</span>
-                        ${detail}
-                    </div>
-                    <div class="ans-detail"><strong>解析：</strong>${explanation}</div>
-                `;
+                let detail = userAns ? `<span class="${isCorrect ? 'correct-answer' : 'wrong-answer'}">你的答案：${userAns}. ${getWord(exam, userAns)} ${isCorrect ? '✓' : '✗'}</span>` : `<span class="wrong-answer">未作答</span>`;
+                explainDiv.innerHTML = `<div class="ans-line"><span class="ans-icon">${isCorrect ? '✅' : '❌'}</span><span class="ans-tag">正确答案：${correctAns}. ${correctWord}</span>${detail}</div><div class="ans-detail"><strong>解析：</strong>${explanation}</div>`;
                 explainDiv.style.display = 'block';
             });
         }
@@ -708,14 +270,9 @@
 
     window.pickWord = function(letter) {
         if (submitted[currentPage]) return;
-        if (!activeBlank) {
-            alert('请先点击上方文章中的空格，再选择词。');
-            return;
-        }
+        if (!activeBlank) { alert('请先点击上方文章中的空格，再选择词。'); return; }
         const answers = userAnswers[currentPage];
-        BLANKS.forEach(k => {
-            if (answers[k] === letter) answers[k] = null;
-        });
+        BLANKS.forEach(k => { if (answers[k] === letter) answers[k] = null; });
         answers[activeBlank] = letter;
         activeBlank = null;
         render();
@@ -724,9 +281,7 @@
     window.selectOption = function(el, blankId, letter) {
         if (submitted[currentPage]) return;
         const answers = userAnswers[currentPage];
-        BLANKS.forEach(k => {
-            if (answers[k] === letter && k !== blankId) answers[k] = null;
-        });
+        BLANKS.forEach(k => { if (answers[k] === letter && k !== blankId) answers[k] = null; });
         answers[blankId] = letter;
         render();
     };
@@ -739,60 +294,39 @@
                 render();
             });
         }
-
         const submitBtn = document.getElementById('submitBtn');
-        if (submitBtn) {
-            submitBtn.addEventListener('click', () => {
-                const answers = userAnswers[currentPage];
-                let allAnswered = true;
-                BLANKS.forEach(k => {
-                    if (!answers[k]) allAnswered = false;
-                });
-                if (!allAnswered) { alert('请先完成所有空格再提交。'); return; }
-                submitted[currentPage] = true;
-                activeBlank = null;
-                render();
-            });
-        }
-
+        if (submitBtn) submitBtn.addEventListener('click', () => {
+            const answers = userAnswers[currentPage];
+            let allAnswered = true;
+            BLANKS.forEach(k => { if (!answers[k]) allAnswered = false; });
+            if (!allAnswered) { alert('请先完成所有空格再提交。'); return; }
+            submitted[currentPage] = true;
+            activeBlank = null;
+            render();
+        });
         const resetBtn = document.getElementById('resetBtn');
-        if (resetBtn) {
-            resetBtn.addEventListener('click', () => {
-                const answers = userAnswers[currentPage];
-                BLANKS.forEach(k => { answers[k] = null; });
-                submitted[currentPage] = false;
-                activeBlank = null;
-                render();
-            });
-        }
-
+        if (resetBtn) resetBtn.addEventListener('click', () => {
+            const answers = userAnswers[currentPage];
+            BLANKS.forEach(k => { answers[k] = null; });
+            submitted[currentPage] = false;
+            activeBlank = null;
+            render();
+        });
         const prevBtn = document.getElementById('prevBtn');
-        if (prevBtn) {
-            prevBtn.addEventListener('click', () => {
-                if (currentPage > 0) goToPage(currentPage - 1);
-            });
-        }
+        if (prevBtn) prevBtn.addEventListener('click', () => { if (currentPage > 0) goToPage(currentPage - 1); });
         const nextBtn = document.getElementById('nextBtn');
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => {
-                if (currentPage < cibuExams.length - 1) goToPage(currentPage + 1);
-            });
-        }
+        if (nextBtn) nextBtn.addEventListener('click', () => { if (currentPage < cibuExams.length - 1) goToPage(currentPage + 1); });
         const pageInput = document.getElementById('pageInput');
         if (pageInput) {
             const handleJump = () => {
                 let val = parseInt(pageInput.value, 10);
-                if (isNaN(val)) { pageInput.value = currentPage + 1; return; }
+                if (isNaN(val)) val = 1;
                 if (val < 1) val = 1;
                 if (val > cibuExams.length) val = cibuExams.length;
-                if (val - 1 === currentPage) { pageInput.value = currentPage + 1; return; }
                 goToPage(val - 1);
             };
             pageInput.addEventListener('blur', handleJump);
-            pageInput.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter') { e.preventDefault(); handleJump(); pageInput.blur(); }
-            });
-            pageInput.addEventListener('focus', () => { pageInput.select(); });
+            pageInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); handleJump(); pageInput.blur(); } });
         }
     }
 
@@ -813,9 +347,7 @@
         render();
     }
 
-    window.addEventListener('load', () => {
-        setTimeout(init, 100);
-    });
+    window.addEventListener('load', () => setTimeout(init, 100));
 </script>
 </body>
 </html>
