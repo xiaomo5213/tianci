@@ -3,168 +3,168 @@ const cibuExams = [
     // ========== 1. 2013年10月 ==========
     {
         id: '2013-10',
-    session: '2013年10月',
-    articleTitle: 'Protecting the Few',
-    passage: [
-        'How we live our lives affects the environment. The environment is all the things around you. All across Earth, humans are [31] the environment in small and large ways. We cut down trees to build houses. We plow fields to [32] crops. We pour waste into rivers, lakes and oceans. We use [33] numbers of fish. Activities like these affect plants and animals. They [34] affect things like the soil and water.',
-        'Sometimes our actions make the number of a [35] plant or animal get larger. For example, if you planted roses in your yard, there would be more roses in your area.',
-        'Our activities can also [36] to a smaller number of plants and animals. If a park were turned into an apartment building, what would happen to the plants and animals there? Well, they would [37] die or move to other [38]. There would be fewer plants and animals.',
-        'Pollution and other activities sometimes cause the number of a species (物种) to become so [39] that it cannot survive. A species that is in [40] of dying out is called an endangered (濒危的) species.'
-    ],
-    wordBank: [
-        { letter: 'A', word: 'changing' }, { letter: 'B', word: 'grow' },
-        { letter: 'C', word: 'lead' }, { letter: 'D', word: 'either' },
-        { letter: 'E', word: 'huge' }, { letter: 'F', word: 'places' },
-        { letter: 'G', word: 'certain' }, { letter: 'H', word: 'also' },
-        { letter: 'I', word: 'increase' }, { letter: 'J', word: 'small' },
-        { letter: 'K', word: 'survival' }, { letter: 'L', word: 'danger' }
-    ],
-    answers: { '31': 'A', '32': 'B', '33': 'E', '34': 'H', '35': 'G', '36': 'C', '37': 'D', '38': 'F', '39': 'J', '40': 'L' },
-    explanations: {
-        '31': '【正确答案：A. changing】空格所在句为"humans are ___ the environment in small and large ways"（人类正以大大小小的方式___环境）。"are + 现在分词"构成**现在进行时**，空格需要填入一个**现在分词**，且与"the environment"构成动宾关系。选项A "changing"（改变）符合语境，人类正在改变环境，与下文"cut down trees"（砍树）、"pour waste"（倒废物）等具体行为一致。干扰项分析：B "grow"（种植）是动词原形，不能构成现在进行时；H "also"（也）是副词，语法不通；其余选项均为非现在分词形式，无法与"are"构成进行时态。',
-        '32': '【正确答案：B. grow】空格所在句为"We plow fields to ___ crops"（我们耕田来___庄稼）。"to + 动词原形"构成不定式，表示目的，空格需要填入一个**动词原形**，且与"crops"（庄稼）构成合理的动宾搭配。选项B "grow"（种植）符合语境，"grow crops"（种植庄稼）是极为常见的固定搭配。干扰项分析：A "changing"是现在分词，不能用于"to"之后表示目的；C "lead"（导致）不能构成"lead crops"；E "huge"（巨大的）是形容词，不能作动词。',
-        '33': '【正确答案：E. huge】空格所在句为"We use ___ numbers of fish"（我们使用___数量的鱼）。空格修饰"numbers"（数量），需要填入一个**形容词**，且与"numbers"搭配构成对"数量"的描述。选项E "huge"（巨大的）符合语境，"huge numbers of"（大量的）是极为常见的英语搭配，指人类大量捕鱼。干扰项分析：G "certain"（某些）虽然也能修饰 numbers，但"certain numbers of fish"语义不自然；J "small"（小的）与上下文不符，人类是过度捕捞；H "also"是副词，不能修饰名词。',
-        '34': '【正确答案：H. also】空格所在句为"They ___ affect things like the soil and water"（它们___影响土壤和水等事物）。空格位于主语"They"和谓语"affect"之间，需要一个**副词**修饰动词。选项H "also"（也）符合语境，"also affect"（也影响）表明除了植物和动物之外，人类活动还影响土壤和水，形成语义递进。干扰项分析：A "changing"是现在分词，不能作状语；C "lead"是动词，语法不通；I "increase"（增加）是动词，不能作副词修饰affect。',
-        '35': '【正确答案：G. certain】空格所在句为"the number of a ___ plant or animal"（某一___植物或动物的数量）。空格修饰"plant or animal"，需要填入一个**形容词**，表示"某一特定种类"。选项G "certain"（某种、某一）符合语境，"a certain plant or animal"（某种特定的植物或动物）是极为常见的搭配。干扰项分析：E "huge"（巨大的）不能修饰植物或动物表示种类；J "small"（小的）语义不符；H "also"是副词，不能修饰名词。',
-        '36': '【正确答案：C. lead】空格所在句为"Our activities can also ___ to a smaller number of plants and animals"（我们的活动也会___植物和动物数量减少）。"can also ___ to"是一个动词结构，需要填入一个**动词原形**，与"to"构成固定搭配。选项C "lead"（导致）符合语境，"lead to"（导致）是极为常见的固定搭配，"lead to a smaller number"（导致数量减少）语义通顺。干扰项分析：A "changing"是现在分词，不能跟在"can also"后；I "increase"（增加）与"smaller number"语义相反；B "grow"是动词原形，但"grow to a smaller number"搭配不当。',
-        '37': '【正确答案：D. either】空格所在句为"they would ___ die or move to other ___"（它们会___死亡或迁移到其他___）。"___ ... or ..."是固定搭配结构，空格需要填入一个**副词或连词**，与后面的"or"构成呼应。选项D "either"（两者之一）符合语境，"either...or..."（要么……要么……）是极为常见的固定搭配，表示两者择一。干扰项分析：C "lead"（导致）是动词，不能构成"lead...or..."结构；H "also"（也）不能与"or"构成对举结构；F "places"是名词，语法不通。',
-        '38': '【正确答案：F. places】空格所在句为"move to other ___"（迁移到其他___）。"move to other ___"需要填入一个**名词复数**，表示迁移的目的地。选项F "places"（地方）符合语境，"move to other places"（迁移到其他地方）是极为常见的搭配。干扰项分析：G "certain"（某种的）是形容词，不能作名词；J "small"是形容词，语法不通；K "survival"（生存）语义不符。',
-        '39': '【正确答案：J. small】空格所在句为"the number of a species to become so ___ that it cannot survive"（物种数量变得如此___以至于无法生存）。"so + 形容词 + that"是固定结构，空格需要填入一个**形容词**，与"so...that"结构搭配。选项J "small"（小）符合语境，"so small that it cannot survive"（少到无法生存）与"endangered species"（濒危物种）呼应，指数量锐减。干扰项分析：E "huge"（巨大的）语义相反，数量巨大反而容易生存；G "certain"（某种的）不能用于"so...that"结构；A "changing"是现在分词。',
-        '40': '【正确答案：L. danger】空格所在句为"A species that is in ___ of dying out"（处于灭绝___中的物种）。"in ___ of"是固定搭配，需要填入一个**名词**，构成"in + 名词 + of"结构。选项L "danger"（危险）符合语境，"in danger of"（处于……的危险中）是极为常见的固定搭配，指濒临灭绝。干扰项分析：K "survival"（生存）不能构成"in survival of"；F "places"（地方）不能构成"in places of"；G "certain"（某种的）是形容词。'
-    }
-},
+        session: '2013年10月',
+        articleTitle: 'Protecting the Few',
+        passage: [
+            'How we live our lives affects the environment. The environment is all the things around you. All across Earth, humans are [31] the environment in small and large ways. We cut down trees to build houses. We plow fields to [32] crops. We pour waste into rivers, lakes and oceans. We use [33] numbers of fish. Activities like these affect plants and animals. They [34] affect things like the soil and water.',
+            'Sometimes our actions make the number of a [35] plant or animal get larger. For example, if you planted roses in your yard, there would be more roses in your area.',
+            'Our activities can also [36] to a smaller number of plants and animals. If a park were turned into an apartment building, what would happen to the plants and animals there? Well, they would [37] die or move to other [38]. There would be fewer plants and animals.',
+            'Pollution and other activities sometimes cause the number of a species (物种) to become so [39] that it cannot survive. A species that is in [40] of dying out is called an endangered (濒危的) species.'
+        ],
+        wordBank: [
+            { letter: 'A', word: 'changing' }, { letter: 'B', word: 'grow' },
+            { letter: 'C', word: 'lead' }, { letter: 'D', word: 'either' },
+            { letter: 'E', word: 'huge' }, { letter: 'F', word: 'places' },
+            { letter: 'G', word: 'certain' }, { letter: 'H', word: 'also' },
+            { letter: 'I', word: 'increase' }, { letter: 'J', word: 'small' },
+            { letter: 'K', word: 'survival' }, { letter: 'L', word: 'danger' }
+        ],
+        answers: { '31': 'A', '32': 'B', '33': 'E', '34': 'H', '35': 'G', '36': 'C', '37': 'D', '38': 'F', '39': 'J', '40': 'L' },
+        explanations: {
+            '31': '【正确答案：A. changing】空格所在句为"humans are ___ the environment in small and large ways"（人类正以大大小小的方式___环境）。"are + 现在分词"构成**现在进行时**，空格需要填入一个**现在分词**，且与"the environment"构成动宾关系。选项A "changing"（改变）符合语境，人类正在改变环境，与下文"cut down trees"（砍树）、"pour waste"（倒废物）等具体行为一致。干扰项分析：B "grow"（种植）是动词原形，不能构成现在进行时；H "also"（也）是副词，语法不通；其余选项均为非现在分词形式，无法与"are"构成进行时态。',
+            '32': '【正确答案：B. grow】空格所在句为"We plow fields to ___ crops"（我们耕田来___庄稼）。"to + 动词原形"构成不定式，表示目的，空格需要填入一个**动词原形**，且与"crops"（庄稼）构成合理的动宾搭配。选项B "grow"（种植）符合语境，"grow crops"（种植庄稼）是极为常见的固定搭配。干扰项分析：A "changing"是现在分词，不能用于"to"之后表示目的；C "lead"（导致）不能构成"lead crops"；E "huge"（巨大的）是形容词，不能作动词。',
+            '33': '【正确答案：E. huge】空格所在句为"We use ___ numbers of fish"（我们使用___数量的鱼）。空格修饰"numbers"（数量），需要填入一个**形容词**，且与"numbers"搭配构成对"数量"的描述。选项E "huge"（巨大的）符合语境，"huge numbers of"（大量的）是极为常见的英语搭配，指人类大量捕鱼。干扰项分析：G "certain"（某些）虽然也能修饰 numbers，但"certain numbers of fish"语义不自然；J "small"（小的）与上下文不符，人类是过度捕捞；H "also"是副词，不能修饰名词。',
+            '34': '【正确答案：H. also】空格所在句为"They ___ affect things like the soil and water"（它们___影响土壤和水等事物）。空格位于主语"They"和谓语"affect"之间，需要一个**副词**修饰动词。选项H "also"（也）符合语境，"also affect"（也影响）表明除了植物和动物之外，人类活动还影响土壤和水，形成语义递进。干扰项分析：A "changing"是现在分词，不能作状语；C "lead"是动词，语法不通；I "increase"（增加）是动词，不能作副词修饰affect。',
+            '35': '【正确答案：G. certain】空格所在句为"the number of a ___ plant or animal"（某一___植物或动物的数量）。空格修饰"plant or animal"，需要填入一个**形容词**，表示"某一特定种类"。选项G "certain"（某种、某一）符合语境，"a certain plant or animal"（某种特定的植物或动物）是极为常见的搭配。干扰项分析：E "huge"（巨大的）不能修饰植物或动物表示种类；J "small"（小的）语义不符；H "also"是副词，不能修饰名词。',
+            '36': '【正确答案：C. lead】空格所在句为"Our activities can also ___ to a smaller number of plants and animals"（我们的活动也会___植物和动物数量减少）。"can also ___ to"是一个动词结构，需要填入一个**动词原形**，与"to"构成固定搭配。选项C "lead"（导致）符合语境，"lead to"（导致）是极为常见的固定搭配，"lead to a smaller number"（导致数量减少）语义通顺。干扰项分析：A "changing"是现在分词，不能跟在"can also"后；I "increase"（增加）与"smaller number"语义相反；B "grow"是动词原形，但"grow to a smaller number"搭配不当。',
+            '37': '【正确答案：D. either】空格所在句为"they would ___ die or move to other ___"（它们会___死亡或迁移到其他___）。"___ ... or ..."是固定搭配结构，空格需要填入一个**副词或连词**，与后面的"or"构成呼应。选项D "either"（两者之一）符合语境，"either...or..."（要么……要么……）是极为常见的固定搭配，表示两者择一。干扰项分析：C "lead"（导致）是动词，不能构成"lead...or..."结构；H "also"（也）不能与"or"构成对举结构；F "places"是名词，语法不通。',
+            '38': '【正确答案：F. places】空格所在句为"move to other ___"（迁移到其他___）。"move to other ___"需要填入一个**名词复数**，表示迁移的目的地。选项F "places"（地方）符合语境，"move to other places"（迁移到其他地方）是极为常见的搭配。干扰项分析：G "certain"（某种的）是形容词，不能作名词；J "small"是形容词，语法不通；K "survival"（生存）语义不符。',
+            '39': '【正确答案：J. small】空格所在句为"the number of a species to become so ___ that it cannot survive"（物种数量变得如此___以至于无法生存）。"so + 形容词 + that"是固定结构，空格需要填入一个**形容词**，与"so...that"结构搭配。选项J "small"（小）符合语境，"so small that it cannot survive"（少到无法生存）与"endangered species"（濒危物种）呼应，指数量锐减。干扰项分析：E "huge"（巨大的）语义相反，数量巨大反而容易生存；G "certain"（某种的）不能用于"so...that"结构；A "changing"是现在分词。',
+            '40': '【正确答案：L. danger】空格所在句为"A species that is in ___ of dying out"（处于灭绝___中的物种）。"in ___ of"是固定搭配，需要填入一个**名词**，构成"in + 名词 + of"结构。选项L "danger"（危险）符合语境，"in danger of"（处于……的危险中）是极为常见的固定搭配，指濒临灭绝。干扰项分析：K "survival"（生存）不能构成"in survival of"；F "places"（地方）不能构成"in places of"；G "certain"（某种的）是形容词。'
+        }
+    },
 
-// ========== 2. 2014年4月 ==========
-{
-    id: '2014-04',
-    session: '2014年4月',
-    articleTitle: 'Life is Difficult',
-    passage: [
-        'What makes life difficult is that the process of facing and solving problems is a painful one. Problems cause [31], anger, fear or despair. These are [32] feelings, often as painful as any kind of physical pain. And since life [33] an endless series of problems, it is [34] difficult and is full of pain as well as joy.',
-        'Yet it is in this process of [35] and solving problems that life has its meaning. Problems call forth our [36] and our wisdom. It is only because of problem that we grow [37] and spiritually. When we want to encourage the [38] of the human spirit, we encourage the human capacity to solve problems, just as in school we deliberately [39] problems for our children to solve. It is through the pain of confronting and resolving that we learn. It is for this reason that [40] people learn not to fear but actually to welcome problems and actually to welcome the pain of problems.'
-    ],
-    wordBank: [
-        { letter: 'A', word: 'meeting' }, { letter: 'B', word: 'courage' },
-        { letter: 'C', word: 'careful' }, { letter: 'D', word: 'growth' },
-        { letter: 'E', word: 'wise' }, { letter: 'F', word: 'takes' },
-        { letter: 'G', word: 'sadness' }, { letter: 'H', word: 'set' },
-        { letter: 'I', word: 'poses' }, { letter: 'J', word: 'always' },
-        { letter: 'K', word: 'uncomfortable' }, { letter: 'L', word: 'mentally' }
-    ],
-    answers: { '31': 'G', '32': 'K', '33': 'I', '34': 'J', '35': 'A', '36': 'B', '37': 'L', '38': 'D', '39': 'H', '40': 'E' },
-    explanations: {
-        '31': '【正确答案：G. sadness】空格所在句为"Problems cause ___, anger, fear or despair"（问题导致___、愤怒、恐惧或绝望）。空格与"anger"（愤怒）、"fear"（恐惧）、"despair"（绝望）并列，需要填入一个**表示负面情绪的名词**。选项G "sadness"（悲伤）符合语境，与 anger、fear、despair 构成四种常见的负面情绪。干扰项分析：D "growth"（成长）是正面词，与 anger 等并列不协调；A "meeting"（会议）语义不通；C "careful"（仔细的）是形容词。',
-        '32': '【正确答案：K. uncomfortable】空格所在句为"These are ___ feelings, often as painful as any kind of physical pain"（这些是___感受，往往和任何身体疼痛一样痛苦）。空格修饰"feelings"（感受），需要填入一个**形容词**，且与后文"as painful as physical pain"（和身体疼痛一样痛苦）呼应。选项K "uncomfortable"（不舒服的）符合语境，"uncomfortable feelings"（不舒服的感受）与"painful"（痛苦的）形成语义呼应。干扰项分析：C "careful"（仔细的）语义不符；E "wise"（明智的）不能修饰 feelings 表示"负面"；D "growth"是名词。',
-        '33': '【正确答案：I. poses】空格所在句为"since life ___ an endless series of problems"（既然生活___一系列无穷无尽的问题）。"since"引导原因状语从句，空格需要填入一个**动词第三人称单数**（主语为 life）。选项I "poses"（提出、造成）符合语境，"pose problems"（造成问题）是极为常见的固定搭配，且主语 life 决定使用第三人称单数。干扰项分析：F "takes"（带走）不能构成"take problems"表示"造成问题"；H "set"（设置）是原形，不能与 life 搭配成第三人称单数；J "always"是副词，语法不通。',
-        '34': '【正确答案：J. always】空格所在句为"it is ___ difficult and is full of pain as well as joy"（它___是困难的，既充满痛苦又充满欢乐）。空格修饰"difficult"，需要填入一个**副词**。选项J "always"（总是）符合语境，"is always difficult"（总是困难的）与后文"full of pain as well as joy"（既有痛苦又有欢乐）呼应，说明生活总是困难但也总有快乐。干扰项分析：L "mentally"（精神上）语义不符；E "wise"（明智的）是形容词；K "uncomfortable"是形容词。',
-        '35': '【正确答案：A. meeting】空格所在句为"it is in this process of ___ and solving problems"（正是在___和解决问题的过程中）。空格与"solving"（解决）并列，需要填入一个**动名词**。选项A "meeting"（面对）符合语境，"meeting and solving problems"（面对和解决问题）是极为常见的搭配，与文章开头"facing and solving problems"（面对和解决问题）呼应。干扰项分析：D "growth"（成长）是名词，不能与 solving 并列；H "set"（设置）是动词原形；B "courage"（勇气）是名词。',
-        '36': '【正确答案：B. courage】空格所在句为"Problems call forth our ___ and our wisdom"（问题激发我们的___和智慧）。空格与"wisdom"（智慧）并列，需要填入一个**名词**，且与"call forth"（激发）搭配。选项B "courage"（勇气）符合语境，"courage and wisdom"（勇气和智慧）是极为常见的搭配，与"call forth"（激发）形成语义呼应。干扰项分析：A "meeting"（会议）不能与 wisdom 并列；D "growth"（成长）语义不如 courage 贴切；H "set"是动词。',
-        '37': '【正确答案：L. mentally】空格所在句为"we grow ___ and spiritually"（我们在___和精神上成长）。空格与"spiritually"（精神上）并列，需要填入一个**副词**。选项L "mentally"（心理上、精神上）符合语境，"mentally and spiritually"（心理上和精神上）是极为常见的并列搭配，指人在心理和精神两个层面成长。干扰项分析：J "always"（总是）不能与 spiritually 并列；E "wise"（明智的）是形容词；K "uncomfortable"是形容词。',
-        '38': '【正确答案：D. growth】空格所在句为"we want to encourage the ___ of the human spirit"（我们想要促进人类精神的___）。"the ___ of"需要填入一个**名词**。选项D "growth"（成长）符合语境，"the growth of the human spirit"（人类精神的成长）是极为常见的搭配，且与后文"we encourage the human capacity to solve problems"（我们鼓励人类解决问题的能力）呼应。干扰项分析：B "courage"（勇气）不能构成"the courage of the human spirit"表示"成长"；A "meeting"（会议）语义不符；H "set"是动词。',
-        '39': '【正确答案：H. set】空格所在句为"in school we deliberately ___ problems for our children to solve"（在学校我们故意___问题让孩子去解决）。"we deliberately ___ problems"需要填入一个**动词原形**（主语 we）。选项H "set"（设置）符合语境，"set problems"（设置题目、出题）是极为常见的固定搭配，指老师给学生出题。干扰项分析：F "takes"（带走）是第三人称单数，与主语 we 不搭配；I "poses"（提出）也是第三人称单数；A "meeting"是动名词。',
-        '40': '【正确答案：E. wise】空格所在句为"It is for this reason that ___ people learn not to fear"（正是因为这个原因，___的人学会不害怕）。空格修饰"people"，需要填入一个**形容词**。选项E "wise"（明智的）符合语境，"wise people"（明智的人）与后文"learn not to fear but actually to welcome problems"（学会不害怕而是真正欢迎问题）呼应，指出明智的人对问题的态度。干扰项分析：C "careful"（仔细的）语义不同；J "always"是副词，不能修饰 people；K "uncomfortable"（不舒服的）不能修饰人。'
-    }
-},
+    // ========== 2. 2014年4月 ==========
+    {
+        id: '2014-04',
+        session: '2014年4月',
+        articleTitle: 'Life is Difficult',
+        passage: [
+            'What makes life difficult is that the process of facing and solving problems is a painful one. Problems cause [31], anger, fear or despair. These are [32] feelings, often as painful as any kind of physical pain. And since life [33] an endless series of problems, it is [34] difficult and is full of pain as well as joy.',
+            'Yet it is in this process of [35] and solving problems that life has its meaning. Problems call forth our [36] and our wisdom. It is only because of problem that we grow [37] and spiritually. When we want to encourage the [38] of the human spirit, we encourage the human capacity to solve problems, just as in school we deliberately [39] problems for our children to solve. It is through the pain of confronting and resolving that we learn. It is for this reason that [40] people learn not to fear but actually to welcome problems and actually to welcome the pain of problems.'
+        ],
+        wordBank: [
+            { letter: 'A', word: 'meeting' }, { letter: 'B', word: 'courage' },
+            { letter: 'C', word: 'careful' }, { letter: 'D', word: 'growth' },
+            { letter: 'E', word: 'wise' }, { letter: 'F', word: 'takes' },
+            { letter: 'G', word: 'sadness' }, { letter: 'H', word: 'set' },
+            { letter: 'I', word: 'poses' }, { letter: 'J', word: 'always' },
+            { letter: 'K', word: 'uncomfortable' }, { letter: 'L', word: 'mentally' }
+        ],
+        answers: { '31': 'G', '32': 'K', '33': 'I', '34': 'J', '35': 'A', '36': 'B', '37': 'L', '38': 'D', '39': 'H', '40': 'E' },
+        explanations: {
+            '31': '【正确答案：G. sadness】空格所在句为"Problems cause ___, anger, fear or despair"（问题导致___、愤怒、恐惧或绝望）。空格与"anger"（愤怒）、"fear"（恐惧）、"despair"（绝望）并列，需要填入一个**表示负面情绪的名词**。选项G "sadness"（悲伤）符合语境，与 anger、fear、despair 构成四种常见的负面情绪。干扰项分析：D "growth"（成长）是正面词，与 anger 等并列不协调；A "meeting"（会议）语义不通；C "careful"（仔细的）是形容词。',
+            '32': '【正确答案：K. uncomfortable】空格所在句为"These are ___ feelings, often as painful as any kind of physical pain"（这些是___感受，往往和任何身体疼痛一样痛苦）。空格修饰"feelings"（感受），需要填入一个**形容词**，且与后文"as painful as physical pain"（和身体疼痛一样痛苦）呼应。选项K "uncomfortable"（不舒服的）符合语境，"uncomfortable feelings"（不舒服的感受）与"painful"（痛苦的）形成语义呼应。干扰项分析：C "careful"（仔细的）语义不符；E "wise"（明智的）不能修饰 feelings 表示"负面"；D "growth"是名词。',
+            '33': '【正确答案：I. poses】空格所在句为"since life ___ an endless series of problems"（既然生活___一系列无穷无尽的问题）。"since"引导原因状语从句，空格需要填入一个**动词第三人称单数**（主语为 life）。选项I "poses"（提出、造成）符合语境，"pose problems"（造成问题）是极为常见的固定搭配，且主语 life 决定使用第三人称单数。干扰项分析：F "takes"（带走）不能构成"take problems"表示"造成问题"；H "set"（设置）是原形，不能与 life 搭配成第三人称单数；J "always"是副词，语法不通。',
+            '34': '【正确答案：J. always】空格所在句为"it is ___ difficult and is full of pain as well as joy"（它___是困难的，既充满痛苦又充满欢乐）。空格修饰"difficult"，需要填入一个**副词**。选项J "always"（总是）符合语境，"is always difficult"（总是困难的）与后文"full of pain as well as joy"（既有痛苦又有欢乐）呼应，说明生活总是困难但也总有快乐。干扰项分析：L "mentally"（精神上）语义不符；E "wise"（明智的）是形容词；K "uncomfortable"是形容词。',
+            '35': '【正确答案：A. meeting】空格所在句为"it is in this process of ___ and solving problems"（正是在___和解决问题的过程中）。空格与"solving"（解决）并列，需要填入一个**动名词**。选项A "meeting"（面对）符合语境，"meeting and solving problems"（面对和解决问题）是极为常见的搭配，与文章开头"facing and solving problems"（面对和解决问题）呼应。干扰项分析：D "growth"（成长）是名词，不能与 solving 并列；H "set"（设置）是动词原形；B "courage"（勇气）是名词。',
+            '36': '【正确答案：B. courage】空格所在句为"Problems call forth our ___ and our wisdom"（问题激发我们的___和智慧）。空格与"wisdom"（智慧）并列，需要填入一个**名词**，且与"call forth"（激发）搭配。选项B "courage"（勇气）符合语境，"courage and wisdom"（勇气和智慧）是极为常见的搭配，与"call forth"（激发）形成语义呼应。干扰项分析：A "meeting"（会议）不能与 wisdom 并列；D "growth"（成长）语义不如 courage 贴切；H "set"是动词。',
+            '37': '【正确答案：L. mentally】空格所在句为"we grow ___ and spiritually"（我们在___和精神上成长）。空格与"spiritually"（精神上）并列，需要填入一个**副词**。选项L "mentally"（心理上、精神上）符合语境，"mentally and spiritually"（心理上和精神上）是极为常见的并列搭配，指人在心理和精神两个层面成长。干扰项分析：J "always"（总是）不能与 spiritually 并列；E "wise"（明智的）是形容词；K "uncomfortable"是形容词。',
+            '38': '【正确答案：D. growth】空格所在句为"we want to encourage the ___ of the human spirit"（我们想要促进人类精神的___）。"the ___ of"需要填入一个**名词**。选项D "growth"（成长）符合语境，"the growth of the human spirit"（人类精神的成长）是极为常见的搭配，且与后文"we encourage the human capacity to solve problems"（我们鼓励人类解决问题的能力）呼应。干扰项分析：B "courage"（勇气）不能构成"the courage of the human spirit"表示"成长"；A "meeting"（会议）语义不符；H "set"是动词。',
+            '39': '【正确答案：H. set】空格所在句为"in school we deliberately ___ problems for our children to solve"（在学校我们故意___问题让孩子去解决）。"we deliberately ___ problems"需要填入一个**动词原形**（主语 we）。选项H "set"（设置）符合语境，"set problems"（设置题目、出题）是极为常见的固定搭配，指老师给学生出题。干扰项分析：F "takes"（带走）是第三人称单数，与主语 we 不搭配；I "poses"（提出）也是第三人称单数；A "meeting"是动名词。',
+            '40': '【正确答案：E. wise】空格所在句为"It is for this reason that ___ people learn not to fear"（正是因为这个原因，___的人学会不害怕）。空格修饰"people"，需要填入一个**形容词**。选项E "wise"（明智的）符合语境，"wise people"（明智的人）与后文"learn not to fear but actually to welcome problems"（学会不害怕而是真正欢迎问题）呼应，指出明智的人对问题的态度。干扰项分析：C "careful"（仔细的）语义不同；J "always"是副词，不能修饰 people；K "uncomfortable"（不舒服的）不能修饰人。'
+        }
+    },
 
-// ========== 3. 2014年10月 ==========
-{
-    id: '2014-10',
-    session: '2014年10月',
-    articleTitle: 'Mental Activities Help Save Memory',
-    passage: [
-        'Doing mental activities is helpful. Reading books and writing at any age may save memory, a new [31] finds.',
-        'The study was conducted by some American neurologists (神经病学家). It [32] 294 people. They were given [33] on memory and thinking. They had the tests once a year for six years. They were also asked to talk about their mental activities during childhood, in their youth, during middle age and at their [34] age.',
-        'Some of those people did mental activities both [35] and late in life. They had a slower [36] of decline in memory than the others. The others [37] did such activities. Their rate of decline in memory was 48% [38].',
-        '"Mental activities like reading and writing are great. They [39] bring benefits. We shouldn\'t [40] their effects on our children, ourselves and our parents," said Robert Wilson, lead author of the study.'
-    ],
-    wordBank: [
-        { letter: 'A', word: 'early' }, { letter: 'B', word: 'tests' },
-        { letter: 'C', word: 'seldom' }, { letter: 'D', word: 'taught' },
-        { letter: 'E', word: 'faster' }, { letter: 'F', word: 'produce' },
-        { letter: 'G', word: 'study' }, { letter: 'H', word: 'current' },
-        { letter: 'I', word: 'involved' }, { letter: 'J', word: 'neglect' },
-        { letter: 'K', word: 'rate' }, { letter: 'L', word: 'really' }
-    ],
-    answers: { '31': 'G', '32': 'I', '33': 'B', '34': 'H', '35': 'A', '36': 'K', '37': 'C', '38': 'E', '39': 'L', '40': 'J' },
-    explanations: {
-        '31': '【正确答案：G. study】空格所在句为"a new ___ finds"（一项新的___发现）。"a new ___ finds"需要填入一个**名词**作主语，且与"finds"（发现）搭配。选项G "study"（研究）符合语境，"a new study finds"（一项新研究发现）是极为常见的固定表达，用于引出研究结论。干扰项分析：B "tests"（测试）不能构成"a new tests finds"（数不一致）；K "rate"（速度）语义不通；A "early"是形容词。',
-        '32': '【正确答案：I. involved】空格所在句为"It ___ 294 people"（它___294人）。空格需要一个**动词过去式**，与"294 people"构成合理的动宾关系。选项I "involved"（涉及）符合语境，"involved 294 people"（涉及294人）是描述研究样本的标准搭配，指研究以294人为对象。干扰项分析：D "taught"（教）语义不符，研究不是"教"人；F "produce"（生产）是动词原形；J "neglect"（忽视）语义相反。',
-        '33': '【正确答案：B. tests】空格所在句为"They were given ___ on memory and thinking"（他们接受了关于记忆和思维的___）。"were given ___ on"需要填入一个**名词复数**，与"on"搭配。选项B "tests"（测试）符合语境，"be given tests on"（接受关于……的测试）是常见的搭配。干扰项分析：G "study"（研究）是单数，与"were given"搭配不当；K "rate"（速度）不能与"on"搭配成"rate on"；A "early"是形容词。',
-        '34': '【正确答案：H. current】空格所在句为"at their ___ age"（在他们___的年龄）。"at their ___ age"需要填入一个**形容词**修饰 age。选项H "current"（当前的）符合语境，"at their current age"（在他们当前的年龄）与前文"during childhood, in their youth, during middle age"（在童年、青年、中年）形成完整的年龄序列。干扰项分析：A "early"（早的）不能与"at their"搭配表示"当前"；E "faster"（更快）是副词比较级；L "really"是副词。',
-        '35': '【正确答案：A. early】空格所在句为"did mental activities both ___ and late in life"（在生命的___和晚期都进行脑力活动）。"both ___ and late"是并列结构，空格与"late"形成对比，需要填入一个**形容词或副词**。选项A "early"（早期）符合语境，"both early and late in life"（在生命的早期和晚期）指从年轻到年老都进行脑力活动。干扰项分析：H "current"（当前的）不能与 late 形成"早/晚"对比；L "really"（真正地）是副词，不能与 late 并列；K "rate"是名词。',
-        '36': '【正确答案：K. rate】空格所在句为"They had a slower ___ of decline in memory"（他们的记忆衰退___较慢）。"a slower ___ of decline"需要填入一个**名词**，与"of decline"搭配。选项K "rate"（速度）符合语境，"rate of decline"（衰退速度）是极为常见的固定搭配。干扰项分析：B "tests"（测试）不能构成"tests of decline"表示衰退速度；G "study"（研究）语义不通；H "current"（当前的）是形容词。',
-        '37': '【正确答案：C. seldom】空格所在句为"The others ___ did such activities"（其他人___做这样的活动）。空格修饰"did"，需要填入一个**副词**，表示频率。选项C "seldom"（很少）符合语境，"seldom did such activities"（很少做这样的活动）与前半句"did mental activities both early and late"（在早晚期都做脑力活动）形成对比。干扰项分析：L "really"（真正地）语义不同；E "faster"（更快）是副词比较级，不能修饰 did 表频率；A "early"是形容词。',
-        '38': '【正确答案：E. faster】空格所在句为"Their rate of decline in memory was 48% ___"（他们的记忆衰退速度___48%）。空格修饰整个句子，需要填入一个**副词比较级**。选项E "faster"（更快）符合语境，"48% faster"（快48%）是极为常见的表达方式，说明两组被试的记忆衰退速度差异。干扰项分析：L "really"（真正地）不能与"48%"搭配表示"快48%"；A "early"是形容词；K "rate"是名词。',
-        '39': '【正确答案：L. really】空格所在句为"They ___ bring benefits"（它们___带来好处）。空格修饰"bring"，需要填入一个**副词**强调语气。选项L "really"（真正地）符合语境，"really bring benefits"（真正带来好处）强调脑力活动确实有益。干扰项分析：E "faster"（更快）不能修饰 bring 表示"确实"；C "seldom"（很少）语义相反；A "early"是形容词。',
-        '40': '【正确答案：J. neglect】空格所在句为"We shouldn\'t ___ their effects on our children"（我们不应该___它们对我们孩子的影响）。"shouldn\'t + 动词原形"构成否定结构，空格需要填入**动词原形**。选项J "neglect"（忽视）符合语境，"shouldn\'t neglect their effects"（不应忽视它们的影响）是常见的搭配，与文章主题"脑力活动有益"呼应。干扰项分析：F "produce"（生产）语义是"产生"，但此处讨论的是"不应忽视影响"；D "taught"（教）是过去式；I "involved"是过去式。'
-    }
-},
+    // ========== 3. 2014年10月 ==========
+    {
+        id: '2014-10',
+        session: '2014年10月',
+        articleTitle: 'Mental Activities Help Save Memory',
+        passage: [
+            'Doing mental activities is helpful. Reading books and writing at any age may save memory, a new [31] finds.',
+            'The study was conducted by some American neurologists (神经病学家). It [32] 294 people. They were given [33] on memory and thinking. They had the tests once a year for six years. They were also asked to talk about their mental activities during childhood, in their youth, during middle age and at their [34] age.',
+            'Some of those people did mental activities both [35] and late in life. They had a slower [36] of decline in memory than the others. The others [37] did such activities. Their rate of decline in memory was 48% [38].',
+            '"Mental activities like reading and writing are great. They [39] bring benefits. We shouldn\'t [40] their effects on our children, ourselves and our parents," said Robert Wilson, lead author of the study.'
+        ],
+        wordBank: [
+            { letter: 'A', word: 'early' }, { letter: 'B', word: 'tests' },
+            { letter: 'C', word: 'seldom' }, { letter: 'D', word: 'taught' },
+            { letter: 'E', word: 'faster' }, { letter: 'F', word: 'produce' },
+            { letter: 'G', word: 'study' }, { letter: 'H', word: 'current' },
+            { letter: 'I', word: 'involved' }, { letter: 'J', word: 'neglect' },
+            { letter: 'K', word: 'rate' }, { letter: 'L', word: 'really' }
+        ],
+        answers: { '31': 'G', '32': 'I', '33': 'B', '34': 'H', '35': 'A', '36': 'K', '37': 'C', '38': 'E', '39': 'L', '40': 'J' },
+        explanations: {
+            '31': '【正确答案：G. study】空格所在句为"a new ___ finds"（一项新的___发现）。"a new ___ finds"需要填入一个**名词**作主语，且与"finds"（发现）搭配。选项G "study"（研究）符合语境，"a new study finds"（一项新研究发现）是极为常见的固定表达，用于引出研究结论。干扰项分析：B "tests"（测试）不能构成"a new tests finds"（数不一致）；K "rate"（速度）语义不通；A "early"是形容词。',
+            '32': '【正确答案：I. involved】空格所在句为"It ___ 294 people"（它___294人）。空格需要一个**动词过去式**，与"294 people"构成合理的动宾关系。选项I "involved"（涉及）符合语境，"involved 294 people"（涉及294人）是描述研究样本的标准搭配，指研究以294人为对象。干扰项分析：D "taught"（教）语义不符，研究不是"教"人；F "produce"（生产）是动词原形；J "neglect"（忽视）语义相反。',
+            '33': '【正确答案：B. tests】空格所在句为"They were given ___ on memory and thinking"（他们接受了关于记忆和思维的___）。"were given ___ on"需要填入一个**名词复数**，与"on"搭配。选项B "tests"（测试）符合语境，"be given tests on"（接受关于……的测试）是常见的搭配。干扰项分析：G "study"（研究）是单数，与"were given"搭配不当；K "rate"（速度）不能与"on"搭配成"rate on"；A "early"是形容词。',
+            '34': '【正确答案：H. current】空格所在句为"at their ___ age"（在他们___的年龄）。"at their ___ age"需要填入一个**形容词**修饰 age。选项H "current"（当前的）符合语境，"at their current age"（在他们当前的年龄）与前文"during childhood, in their youth, during middle age"（在童年、青年、中年）形成完整的年龄序列。干扰项分析：A "early"（早的）不能与"at their"搭配表示"当前"；E "faster"（更快）是副词比较级；L "really"是副词。',
+            '35': '【正确答案：A. early】空格所在句为"did mental activities both ___ and late in life"（在生命的___和晚期都进行脑力活动）。"both ___ and late"是并列结构，空格与"late"形成对比，需要填入一个**形容词或副词**。选项A "early"（早期）符合语境，"both early and late in life"（在生命的早期和晚期）指从年轻到年老都进行脑力活动。干扰项分析：H "current"（当前的）不能与 late 形成"早/晚"对比；L "really"（真正地）是副词，不能与 late 并列；K "rate"是名词。',
+            '36': '【正确答案：K. rate】空格所在句为"They had a slower ___ of decline in memory"（他们的记忆衰退___较慢）。"a slower ___ of decline"需要填入一个**名词**，与"of decline"搭配。选项K "rate"（速度）符合语境，"rate of decline"（衰退速度）是极为常见的固定搭配。干扰项分析：B "tests"（测试）不能构成"tests of decline"表示衰退速度；G "study"（研究）语义不通；H "current"（当前的）是形容词。',
+            '37': '【正确答案：C. seldom】空格所在句为"The others ___ did such activities"（其他人___做这样的活动）。空格修饰"did"，需要填入一个**副词**，表示频率。选项C "seldom"（很少）符合语境，"seldom did such activities"（很少做这样的活动）与前半句"did mental activities both early and late"（在早晚期都做脑力活动）形成对比。干扰项分析：L "really"（真正地）语义不同；E "faster"（更快）是副词比较级，不能修饰 did 表频率；A "early"是形容词。',
+            '38': '【正确答案：E. faster】空格所在句为"Their rate of decline in memory was 48% ___"（他们的记忆衰退速度___48%）。空格修饰整个句子，需要填入一个**副词比较级**。选项E "faster"（更快）符合语境，"48% faster"（快48%）是极为常见的表达方式，说明两组被试的记忆衰退速度差异。干扰项分析：L "really"（真正地）不能与"48%"搭配表示"快48%"；A "early"是形容词；K "rate"是名词。',
+            '39': '【正确答案：L. really】空格所在句为"They ___ bring benefits"（它们___带来好处）。空格修饰"bring"，需要填入一个**副词**强调语气。选项L "really"（真正地）符合语境，"really bring benefits"（真正带来好处）强调脑力活动确实有益。干扰项分析：E "faster"（更快）不能修饰 bring 表示"确实"；C "seldom"（很少）语义相反；A "early"是形容词。',
+            '40': '【正确答案：J. neglect】空格所在句为"We shouldn\'t ___ their effects on our children"（我们不应该___它们对我们孩子的影响）。"shouldn\'t + 动词原形"构成否定结构，空格需要填入**动词原形**。选项J "neglect"（忽视）符合语境，"shouldn\'t neglect their effects"（不应忽视它们的影响）是常见的搭配，与文章主题"脑力活动有益"呼应。干扰项分析：F "produce"（生产）语义是"产生"，但此处讨论的是"不应忽视影响"；D "taught"（教）是过去式；I "involved"是过去式。'
+        }
+    },
 
-// ========== 4. 2015年4月 ==========
-{
-    id: '2015-04',
-    session: '2015年4月',
-    articleTitle: 'Learn from Your Failures',
-    passage: [
-        'Have you ever failed? If not, it is [31] that you have never taken a [32] on trying anything new, or else you are lying.',
-        'There is nothing [33] with failing, as long as you learn from your mistakes, modify your approach and try again. In fact, the more often you fail, the sooner it will be that you [34] succeed, provided that you do learn and keep trying.',
-        'You can [35] only from experience and you get experience only from having a go at something. It may be more [36] to succeed, but you can [37] learn more from failing. This is only if you are observant and take [38] of what you are doing and which things have worked and which haven\'t. You then need to [39] what has happened, alter your [40] and move on.',
-        'So go for it! You will eventually get there -- unless you stop trying.'
-    ],
-    wordBank: [
-        { letter: 'A', word: 'probable' }, { letter: 'B', word: 'actually' },
-        { letter: 'C', word: 'direction' }, { letter: 'D', word: 'finally' },
-        { letter: 'E', word: 'start' }, { letter: 'F', word: 'chance' },
-        { letter: 'G', word: 'special' }, { letter: 'H', word: 'grow' },
-        { letter: 'I', word: 'wrong' }, { letter: 'J', word: 'note' },
-        { letter: 'K', word: 'analyze' }, { letter: 'L', word: 'pleasant' }
-    ],
-    answers: { '31': 'A', '32': 'F', '33': 'I', '34': 'D', '35': 'H', '36': 'L', '37': 'B', '38': 'J', '39': 'K', '40': 'C' },
-    explanations: {
-        '31': '【正确答案：A. probable】空格所在句为"If not, it is ___ that you have never taken a ___ on trying anything new"（如果没有，那你很可能从未___过尝试新事物）。"it is ___ that..."结构中，"it"是形式主语，真正的主语是后面的"that"从句，空格需要填入一个**形容词**作表语。选项A "probable"（可能的）符合语境，"it is probable that..."（……是可能的）是常见的固定句型，表达一种推测。干扰项分析：L "pleasant"（令人愉快的）不能构成"it is pleasant that you have never tried"；I "wrong"（错误的）语义不通；D "finally"（最终）是副词。',
-        '32': '【正确答案：F. chance】空格所在句为"you have never taken a ___ on trying anything new"（你从未___过尝试新事物）。"taken a ___ on"是固定搭配，需要填入一个**名词**，构成"take a + 名词 + on"结构。选项F "chance"（机会）符合语境，"take a chance on"（冒险尝试）是极为常见的固定搭配，指冒险去尝试新事物。干扰项分析：E "start"（开始）不能构成"take a start on"；G "special"（特别的）是形容词；J "note"（笔记）不能构成"take a note on"表示"冒险"。',
-        '33': '【正确答案：I. wrong】空格所在句为"There is nothing ___ with failing"（失败没有什么___）。"nothing ___ with"是固定搭配，需要填入一个**形容词**。选项I "wrong"（错的）符合语境，"nothing wrong with"（……没什么不对）是极为常见的固定搭配，指失败本身没有问题。干扰项分析：G "special"（特别的）虽然可以构成"nothing special with"，但语义是"没什么特别的"，不如"没什么不对"贴切；L "pleasant"（令人愉快的）不能构成"nothing pleasant with"；A "probable"是形容词，但不能用于此结构。',
-        '34': '【正确答案：D. finally】空格所在句为"the sooner it will be that you ___ succeed"（你___成功的时间就越早）。空格修饰"succeed"，需要填入一个**副词**。选项D "finally"（最终）符合语境，"finally succeed"（最终成功）与"the sooner"（越快）形成呼应，说明越早失败越多，最终就会越快成功。干扰项分析：B "actually"（实际上）语义不同；A "probable"是形容词；E "start"是动词。',
-        '35': '【正确答案：H. grow】空格所在句为"You can ___ only from experience"（你只能从经验中___）。"can + 动词原形"构成情态动词结构，空格需要填入**动词原形**。选项H "grow"（成长）符合语境，"grow from experience"（从经验中成长）是极为常见的搭配，与文章主题"从失败中学习"呼应。干扰项分析：E "start"（开始）不能构成"start from experience"表示"成长"；K "analyze"（分析）语义不同；J "note"（注意）是名词。',
-        '36': '【正确答案：L. pleasant】空格所在句为"It may be more ___ to succeed"（成功可能更___）。"more ___ to succeed"需要填入一个**形容词**，作表语。选项L "pleasant"（愉快的）符合语境，"more pleasant to succeed"（成功可能更令人愉快）与后文"but you can actually learn more from failing"（但你实际上能从失败中学到更多）形成对比。干扰项分析：G "special"（特别的）语义不通；I "wrong"（错误的）语义相反；A "probable"（可能的）不能构成"more probable to succeed"表示"更令人愉快"。',
-        '37': '【正确答案：B. actually】空格所在句为"but you can ___ learn more from failing"（但你___能从失败中学到更多）。空格修饰"learn"，需要填入一个**副词**。选项B "actually"（实际上）符合语境，"actually learn more"（实际上学到更多）与前文"more pleasant to succeed"（成功更令人愉快）形成转折，强调失败的实际价值。干扰项分析：D "finally"（最终）语义不同；E "start"是动词；L "pleasant"是形容词。',
-        '38': '【正确答案：J. note】空格所在句为"take ___ of what you are doing"（___你正在做的事情）。"take ___ of"是固定搭配，需要填入一个**名词**。选项J "note"（注意）符合语境，"take note of"（注意）是极为常见的固定搭配，指要仔细观察自己正在做的事。干扰项分析：F "chance"（机会）不能构成"take chance of"；C "direction"（方向）不能构成"take direction of"；K "analyze"是动词。',
-        '39': '【正确答案：K. analyze】空格所在句为"You then need to ___ what has happened"（然后你需要___发生了什么）。"need to + 动词原形"构成不定式，空格需要填入**动词原形**。选项K "analyze"（分析）符合语境，"analyze what has happened"（分析发生了什么）是极为常见的搭配，与"学习失败"的主题呼应。干扰项分析：E "start"（开始）不能构成"start what has happened"；H "grow"（成长）语义不通；J "note"（注意）是名词。',
-        '40': '【正确答案：C. direction】空格所在句为"alter your ___ and move on"（改变你的___并继续前进）。"alter your ___"需要填入一个**名词**。选项C "direction"（方向）符合语境，"alter your direction"（改变方向）是极为常见的搭配，与"move on"（继续前进）形成语义呼应，指调整方向后继续前进。干扰项分析：F "chance"（机会）不能构成"alter your chance"；G "special"（特别的）是形容词；J "note"（笔记）语义不通。'
-    }
-},
+    // ========== 4. 2015年4月 ==========
+    {
+        id: '2015-04',
+        session: '2015年4月',
+        articleTitle: 'Learn from Your Failures',
+        passage: [
+            'Have you ever failed? If not, it is [31] that you have never taken a [32] on trying anything new, or else you are lying.',
+            'There is nothing [33] with failing, as long as you learn from your mistakes, modify your approach and try again. In fact, the more often you fail, the sooner it will be that you [34] succeed, provided that you do learn and keep trying.',
+            'You can [35] only from experience and you get experience only from having a go at something. It may be more [36] to succeed, but you can [37] learn more from failing. This is only if you are observant and take [38] of what you are doing and which things have worked and which haven\'t. You then need to [39] what has happened, alter your [40] and move on.',
+            'So go for it! You will eventually get there -- unless you stop trying.'
+        ],
+        wordBank: [
+            { letter: 'A', word: 'probable' }, { letter: 'B', word: 'actually' },
+            { letter: 'C', word: 'direction' }, { letter: 'D', word: 'finally' },
+            { letter: 'E', word: 'start' }, { letter: 'F', word: 'chance' },
+            { letter: 'G', word: 'special' }, { letter: 'H', word: 'grow' },
+            { letter: 'I', word: 'wrong' }, { letter: 'J', word: 'note' },
+            { letter: 'K', word: 'analyze' }, { letter: 'L', word: 'pleasant' }
+        ],
+        answers: { '31': 'A', '32': 'F', '33': 'I', '34': 'D', '35': 'H', '36': 'L', '37': 'B', '38': 'J', '39': 'K', '40': 'C' },
+        explanations: {
+            '31': '【正确答案：A. probable】空格所在句为"If not, it is ___ that you have never taken a ___ on trying anything new"（如果没有，那你很可能从未___过尝试新事物）。"it is ___ that..."结构中，"it"是形式主语，真正的主语是后面的"that"从句，空格需要填入一个**形容词**作表语。选项A "probable"（可能的）符合语境，"it is probable that..."（……是可能的）是常见的固定句型，表达一种推测。干扰项分析：L "pleasant"（令人愉快的）不能构成"it is pleasant that you have never tried"；I "wrong"（错误的）语义不通；D "finally"（最终）是副词。',
+            '32': '【正确答案：F. chance】空格所在句为"you have never taken a ___ on trying anything new"（你从未___过尝试新事物）。"taken a ___ on"是固定搭配，需要填入一个**名词**，构成"take a + 名词 + on"结构。选项F "chance"（机会）符合语境，"take a chance on"（冒险尝试）是极为常见的固定搭配，指冒险去尝试新事物。干扰项分析：E "start"（开始）不能构成"take a start on"；G "special"（特别的）是形容词；J "note"（笔记）不能构成"take a note on"表示"冒险"。',
+            '33': '【正确答案：I. wrong】空格所在句为"There is nothing ___ with failing"（失败没有什么___）。"nothing ___ with"是固定搭配，需要填入一个**形容词**。选项I "wrong"（错的）符合语境，"nothing wrong with"（……没什么不对）是极为常见的固定搭配，指失败本身没有问题。干扰项分析：G "special"（特别的）虽然可以构成"nothing special with"，但语义是"没什么特别的"，不如"没什么不对"贴切；L "pleasant"（令人愉快的）不能构成"nothing pleasant with"；A "probable"是形容词，但不能用于此结构。',
+            '34': '【正确答案：D. finally】空格所在句为"the sooner it will be that you ___ succeed"（你___成功的时间就越早）。空格修饰"succeed"，需要填入一个**副词**。选项D "finally"（最终）符合语境，"finally succeed"（最终成功）与"the sooner"（越快）形成呼应，说明越早失败越多，最终就会越快成功。干扰项分析：B "actually"（实际上）语义不同；A "probable"是形容词；E "start"是动词。',
+            '35': '【正确答案：H. grow】空格所在句为"You can ___ only from experience"（你只能从经验中___）。"can + 动词原形"构成情态动词结构，空格需要填入**动词原形**。选项H "grow"（成长）符合语境，"grow from experience"（从经验中成长）是极为常见的搭配，与文章主题"从失败中学习"呼应。干扰项分析：E "start"（开始）不能构成"start from experience"表示"成长"；K "analyze"（分析）语义不同；J "note"（注意）是名词。',
+            '36': '【正确答案：L. pleasant】空格所在句为"It may be more ___ to succeed"（成功可能更___）。"more ___ to succeed"需要填入一个**形容词**，作表语。选项L "pleasant"（愉快的）符合语境，"more pleasant to succeed"（成功可能更令人愉快）与后文"but you can actually learn more from failing"（但你实际上能从失败中学到更多）形成对比。干扰项分析：G "special"（特别的）语义不通；I "wrong"（错误的）语义相反；A "probable"（可能的）不能构成"more probable to succeed"表示"更令人愉快"。',
+            '37': '【正确答案：B. actually】空格所在句为"but you can ___ learn more from failing"（但你___能从失败中学到更多）。空格修饰"learn"，需要填入一个**副词**。选项B "actually"（实际上）符合语境，"actually learn more"（实际上学到更多）与前文"more pleasant to succeed"（成功更令人愉快）形成转折，强调失败的实际价值。干扰项分析：D "finally"（最终）语义不同；E "start"是动词；L "pleasant"是形容词。',
+            '38': '【正确答案：J. note】空格所在句为"take ___ of what you are doing"（___你正在做的事情）。"take ___ of"是固定搭配，需要填入一个**名词**。选项J "note"（注意）符合语境，"take note of"（注意）是极为常见的固定搭配，指要仔细观察自己正在做的事。干扰项分析：F "chance"（机会）不能构成"take chance of"；C "direction"（方向）不能构成"take direction of"；K "analyze"是动词。',
+            '39': '【正确答案：K. analyze】空格所在句为"You then need to ___ what has happened"（然后你需要___发生了什么）。"need to + 动词原形"构成不定式，空格需要填入**动词原形**。选项K "analyze"（分析）符合语境，"analyze what has happened"（分析发生了什么）是极为常见的搭配，与"学习失败"的主题呼应。干扰项分析：E "start"（开始）不能构成"start what has happened"；H "grow"（成长）语义不通；J "note"（注意）是名词。',
+            '40': '【正确答案：C. direction】空格所在句为"alter your ___ and move on"（改变你的___并继续前进）。"alter your ___"需要填入一个**名词**。选项C "direction"（方向）符合语境，"alter your direction"（改变方向）是极为常见的搭配，与"move on"（继续前进）形成语义呼应，指调整方向后继续前进。干扰项分析：F "chance"（机会）不能构成"alter your chance"；G "special"（特别的）是形容词；J "note"（笔记）语义不通。'
+        }
+    },
 
-// ========== 5. 2015年10月 ==========
-{
-    id: '2015-10',
-    session: '2015年10月',
-    articleTitle: 'People Use Technology More, Sleep Less',
-    passage: [
-        'People in Britain now spend more time watching TV, gaming, and using their mobile phones and computers than sleeping. A study [31] that British people use technology for 20 minutes longer than they spend sleeping. The average UK adult uses technology for eight hours and 41 minutes a day. They [32] for an average of eight hours and 21 minutes. One of the biggest [33] for this is wi-fi. People can get online almost [34]. Many people make telephone calls or surf the web while watching TV. TV is still the most [35] activity.',
-        'The study looked at technology and [36] age groups. It found that six-year-olds understand how to use technology at the same [37] as 45-year-olds. Another [38] was that people understand digital technology most when they are 14 or 15. A doctor said technology is [39] the way people communicate with each other. He said we are moving [40] from face-to-face conversations because of technology.'
-    ],
-    wordBank: [
-        { letter: 'A', word: 'changing' }, { letter: 'B', word: 'reasons' },
-        { letter: 'C', word: 'popular' }, { letter: 'D', word: 'found' },
-        { letter: 'E', word: 'anywhere' }, { letter: 'F', word: 'down' },
-        { letter: 'G', word: 'finding' }, { letter: 'H', word: 'level' },
-        { letter: 'I', word: 'different' }, { letter: 'J', word: 'away' },
-        { letter: 'K', word: 'outdoor' }, { letter: 'L', word: 'sleep' }
-    ],
-    answers: { '31': 'D', '32': 'L', '33': 'B', '34': 'E', '35': 'C', '36': 'I', '37': 'H', '38': 'G', '39': 'A', '40': 'J' },
-    explanations: {
-        '31': '【正确答案：D. found】空格所在句为"A study ___ that British people use technology for 20 minutes longer"（一项研究___，英国人使用科技的时间多20分钟）。"A study ___ that..."需要填入一个**动词过去式**，与"study"构成主谓关系。选项D "found"（发现）符合语境，"A study found that..."（一项研究发现……）是极为常见的学术表达，用于引出研究结果。干扰项分析：A "changing"（改变）是现在分词，不能作谓语；B "reasons"（原因）是名词复数；G "finding"（发现）是动名词。',
-        '32': '【正确答案：L. sleep】空格所在句为"They ___ for an average of eight hours and 21 minutes"（他们平均___8小时21分钟）。空格需要一个**动词原形**（主语为 They），与后文"for an average of eight hours and 21 minutes"（平均8小时21分钟）搭配。选项L "sleep"（睡觉）符合语境，"sleep for an average of..."（平均睡……）与文章主题"人们使用科技时间比睡眠更多"呼应。干扰项分析：B "reasons"（原因）是名词；F "down"（向下）是副词；G "finding"（发现）是动名词。',
-        '33': '【正确答案：B. reasons】空格所在句为"One of the biggest ___ for this is wi-fi"（其中一个最大的___是Wi-Fi）。"One of the biggest ___ for"是固定搭配，需要填入一个**名词复数**。选项B "reasons"（原因）符合语境，"one of the biggest reasons for"（……最大的原因之一）是极为常见的固定搭配，与后文"People can get online almost ___"（人们几乎可以在任何地方上网）形成因果呼应。干扰项分析：G "finding"（发现）是单数，与"one of the biggest"搭配不当；H "level"（水平）不能构成"level for this"；E "anywhere"（任何地方）是副词。',
-        '34': '【正确答案：E. anywhere】空格所在句为"People can get online almost ___"（人们几乎可以在___上网）。"almost ___"需要填入一个**副词**，修饰"get online"（上网）。选项E "anywhere"（任何地方）符合语境，"get online almost anywhere"（几乎在任何地方上网）与"wi-fi"（无线网络）形成语义呼应，说明Wi-Fi的普及。干扰项分析：F "down"（向下）语义不通；J "away"（离开）语义不符；K "outdoor"（户外的）是形容词。',
-        '35': '【正确答案：C. popular】空格所在句为"TV is still the most ___ activity"（电视仍然是最___活动）。"the most ___ activity"需要填入一个**形容词**，修饰 activity。选项C "popular"（流行的）符合语境，"the most popular activity"（最流行的活动）与"TV"（电视）搭配自然，说明看电视仍是最普遍的娱乐。干扰项分析：K "outdoor"（户外的）不能修饰 TV；A "changing"（变化的）是现在分词；H "level"是名词。',
-        '36': '【正确答案：I. different】空格所在句为"The study looked at technology and ___ age groups"（研究考察了科技和___年龄段）。"technology and ___ age groups"需要填入一个**形容词**修饰 age groups。选项I "different"（不同的）符合语境，"different age groups"（不同年龄段）是极为常见的搭配，与后文"six-year-olds"（6岁）和"45-year-olds"（45岁）呼应。干扰项分析：C "popular"（流行的）不能修饰 age groups；K "outdoor"（户外的）语义不通；H "level"是名词。',
-        '37': '【正确答案：H. level】空格所在句为"six-year-olds understand how to use technology at the same ___ as 45-year-olds"（6岁孩子使用科技的理解力与45岁的人在同一___）。"at the same ___ as"是固定搭配，需要填入一个**名词**。选项H "level"（水平）符合语境，"at the same level as"（与……在同一水平）是极为常见的固定搭配，指不同年龄段使用科技的能力相当。干扰项分析：E "anywhere"（任何地方）是副词；B "reasons"（原因）不能构成"at the same reasons"；F "down"是副词。',
-        '38': '【正确答案：G. finding】空格所在句为"Another ___ was that people understand digital technology most when they are 14 or 15"（另一个___是，人们在14、15岁时最懂数字科技）。"Another ___ was that"是固定搭配，需要填入一个**名词单数**。选项G "finding"（发现）符合语境，"another finding was that..."（另一个发现是……）是学术文本中的常见表达。干扰项分析：B "reasons"（原因）是复数，与"another"（另一个，单数）不搭配；H "level"（水平）不能构成"another level was that"表示"另一个发现"；A "changing"是现在分词。',
-        '39': '【正确答案：A. changing】空格所在句为"A doctor said technology is ___ the way people communicate with each other"（一位医生说科技正在___人们相互交流的方式）。"is ___ the way"构成进行时，空格需要填入一个**现在分词**，且与"the way"构成动宾关系。选项A "changing"（改变）符合语境，"changing the way people communicate"（改变人们交流的方式）是极为常见的搭配。干扰项分析：D "found"是过去式，不能构成进行时；C "popular"（流行的）是形容词；H "level"是名词。',
-        '40': '【正确答案：J. away】空格所在句为"we are moving ___ from face-to-face conversations"（我们正___面对面交谈）。"moving ___ from"是固定搭配，需要填入一个**副词**。选项J "away"（离开）符合语境，"move away from"（远离）是极为常见的固定搭配，指人们越来越远离面对面交流。干扰项分析：F "down"（向下）不能构成"move down from"表示"远离"；E "anywhere"（任何地方）语义不通；K "outdoor"（户外的）是形容词。'
-    }
-},
+    // ========== 5. 2015年10月 ==========
+    {
+        id: '2015-10',
+        session: '2015年10月',
+        articleTitle: 'People Use Technology More, Sleep Less',
+        passage: [
+            'People in Britain now spend more time watching TV, gaming, and using their mobile phones and computers than sleeping. A study [31] that British people use technology for 20 minutes longer than they spend sleeping. The average UK adult uses technology for eight hours and 41 minutes a day. They [32] for an average of eight hours and 21 minutes. One of the biggest [33] for this is wi-fi. People can get online almost [34]. Many people make telephone calls or surf the web while watching TV. TV is still the most [35] activity.',
+            'The study looked at technology and [36] age groups. It found that six-year-olds understand how to use technology at the same [37] as 45-year-olds. Another [38] was that people understand digital technology most when they are 14 or 15. A doctor said technology is [39] the way people communicate with each other. He said we are moving [40] from face-to-face conversations because of technology.'
+        ],
+        wordBank: [
+            { letter: 'A', word: 'changing' }, { letter: 'B', word: 'reasons' },
+            { letter: 'C', word: 'popular' }, { letter: 'D', word: 'found' },
+            { letter: 'E', word: 'anywhere' }, { letter: 'F', word: 'down' },
+            { letter: 'G', word: 'finding' }, { letter: 'H', word: 'level' },
+            { letter: 'I', word: 'different' }, { letter: 'J', word: 'away' },
+            { letter: 'K', word: 'outdoor' }, { letter: 'L', word: 'sleep' }
+        ],
+        answers: { '31': 'D', '32': 'L', '33': 'B', '34': 'E', '35': 'C', '36': 'I', '37': 'H', '38': 'G', '39': 'A', '40': 'J' },
+        explanations: {
+            '31': '【正确答案：D. found】空格所在句为"A study ___ that British people use technology for 20 minutes longer"（一项研究___，英国人使用科技的时间多20分钟）。"A study ___ that..."需要填入一个**动词过去式**，与"study"构成主谓关系。选项D "found"（发现）符合语境，"A study found that..."（一项研究发现……）是极为常见的学术表达，用于引出研究结果。干扰项分析：A "changing"（改变）是现在分词，不能作谓语；B "reasons"（原因）是名词复数；G "finding"（发现）是动名词。',
+            '32': '【正确答案：L. sleep】空格所在句为"They ___ for an average of eight hours and 21 minutes"（他们平均___8小时21分钟）。空格需要一个**动词原形**（主语为 They），与后文"for an average of eight hours and 21 minutes"（平均8小时21分钟）搭配。选项L "sleep"（睡觉）符合语境，"sleep for an average of..."（平均睡……）与文章主题"人们使用科技时间比睡眠更多"呼应。干扰项分析：B "reasons"（原因）是名词；F "down"（向下）是副词；G "finding"（发现）是动名词。',
+            '33': '【正确答案：B. reasons】空格所在句为"One of the biggest ___ for this is wi-fi"（其中一个最大的___是Wi-Fi）。"One of the biggest ___ for"是固定搭配，需要填入一个**名词复数**。选项B "reasons"（原因）符合语境，"one of the biggest reasons for"（……最大的原因之一）是极为常见的固定搭配，与后文"People can get online almost ___"（人们几乎可以在任何地方上网）形成因果呼应。干扰项分析：G "finding"（发现）是单数，与"one of the biggest"搭配不当；H "level"（水平）不能构成"level for this"；E "anywhere"（任何地方）是副词。',
+            '34': '【正确答案：E. anywhere】空格所在句为"People can get online almost ___"（人们几乎可以在___上网）。"almost ___"需要填入一个**副词**，修饰"get online"（上网）。选项E "anywhere"（任何地方）符合语境，"get online almost anywhere"（几乎在任何地方上网）与"wi-fi"（无线网络）形成语义呼应，说明Wi-Fi的普及。干扰项分析：F "down"（向下）语义不通；J "away"（离开）语义不符；K "outdoor"（户外的）是形容词。',
+            '35': '【正确答案：C. popular】空格所在句为"TV is still the most ___ activity"（电视仍然是最___活动）。"the most ___ activity"需要填入一个**形容词**，修饰 activity。选项C "popular"（流行的）符合语境，"the most popular activity"（最流行的活动）与"TV"（电视）搭配自然，说明看电视仍是最普遍的娱乐。干扰项分析：K "outdoor"（户外的）不能修饰 TV；A "changing"（变化的）是现在分词；H "level"是名词。',
+            '36': '【正确答案：I. different】空格所在句为"The study looked at technology and ___ age groups"（研究考察了科技和___年龄段）。"technology and ___ age groups"需要填入一个**形容词**修饰 age groups。选项I "different"（不同的）符合语境，"different age groups"（不同年龄段）是极为常见的搭配，与后文"six-year-olds"（6岁）和"45-year-olds"（45岁）呼应。干扰项分析：C "popular"（流行的）不能修饰 age groups；K "outdoor"（户外的）语义不通；H "level"是名词。',
+            '37': '【正确答案：H. level】空格所在句为"six-year-olds understand how to use technology at the same ___ as 45-year-olds"（6岁孩子使用科技的理解力与45岁的人在同一___）。"at the same ___ as"是固定搭配，需要填入一个**名词**。选项H "level"（水平）符合语境，"at the same level as"（与……在同一水平）是极为常见的固定搭配，指不同年龄段使用科技的能力相当。干扰项分析：E "anywhere"（任何地方）是副词；B "reasons"（原因）不能构成"at the same reasons"；F "down"是副词。',
+            '38': '【正确答案：G. finding】空格所在句为"Another ___ was that people understand digital technology most when they are 14 or 15"（另一个___是，人们在14、15岁时最懂数字科技）。"Another ___ was that"是固定搭配，需要填入一个**名词单数**。选项G "finding"（发现）符合语境，"another finding was that..."（另一个发现是……）是学术文本中的常见表达。干扰项分析：B "reasons"（原因）是复数，与"another"（另一个，单数）不搭配；H "level"（水平）不能构成"another level was that"表示"另一个发现"；A "changing"是现在分词。',
+            '39': '【正确答案：A. changing】空格所在句为"A doctor said technology is ___ the way people communicate with each other"（一位医生说科技正在___人们相互交流的方式）。"is ___ the way"构成进行时，空格需要填入一个**现在分词**，且与"the way"构成动宾关系。选项A "changing"（改变）符合语境，"changing the way people communicate"（改变人们交流的方式）是极为常见的搭配。干扰项分析：D "found"是过去式，不能构成进行时；C "popular"（流行的）是形容词；H "level"是名词。',
+            '40': '【正确答案：J. away】空格所在句为"we are moving ___ from face-to-face conversations"（我们正___面对面交谈）。"moving ___ from"是固定搭配，需要填入一个**副词**。选项J "away"（离开）符合语境，"move away from"（远离）是极为常见的固定搭配，指人们越来越远离面对面交流。干扰项分析：F "down"（向下）不能构成"move down from"表示"远离"；E "anywhere"（任何地方）语义不通；K "outdoor"（户外的）是形容词。'
+        }
+    },
 // ========== 6. 2016年4月 ==========
 {
     id: '2016-04',
