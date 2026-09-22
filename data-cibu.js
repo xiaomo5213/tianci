@@ -748,7 +748,7 @@ const cibuExams = [
             '36': '【正确答案：B. both】空格所在句为"While I closed one eye to wink, she had to close ___ eyes at the same time"（当我闭一只眼睛眨眼时，她却不得不同时闭上两只眼睛）。"close ___ eyes"需要填入一个限定词，与"eyes"搭配。选项B "both"（两只）符合语境，"close both eyes"（闭上两只眼睛）与前半句"close one eye"（闭一只眼睛）形成对比。干扰项：D "grown-ups"（成年人）是名词；J "often"（经常）是副词；L "quickly"是副词。',
             '37': '【正确答案：L. quickly】空格所在句为"and then ___ opened them again"（然后迅速再次睁开）。空格修饰"opened"，需要一个副词。选项L "quickly"（迅速地）符合语境，"quickly opened them again"（迅速再次睁开）描述了婴儿模仿眨眼时的快速动作。干扰项：E "attentively"（专注地）不能修饰 opened 表"迅速"；J "often"（经常）语义不通；I "burst"是动词。',
             '38': '【正确答案：I. burst】空格所在句为"We all ___ into laughter"（我们都爆发出笑声）。"___ into laughter"是固定搭配，需要填入一个动词过去式。选项I "burst"（爆发）符合语境，"burst into laughter"（爆发出笑声）是极为常见的固定搭配。干扰项：A "laugh"（笑）虽然也可以表达"笑"，但"laugh into laughter"不成立；C "drink"（喝）语义不通；F "asking"（问）是现在分词。',
-            '39': '【正确答案：F. asking】空格所在句为"she was staring at us, puzzled, as if she were ___ 'What are you laughing at?'"（她盯着我们，一脸困惑，仿佛她在问"你们在笑什么？"）。"as if she were ___"是虚拟语气，需要填入一个现在分词。选项F "asking"（问）符合语境，"as if she were asking"（仿佛她在问）是自然表达。干扰项：A "laugh"（笑）语义不同；I "burst"（爆发）不能接引语；E "attentively"是副词。',
+                      '39': '【正确答案：F. asking】空格所在句为"she was staring at us, puzzled, as if she were asking"（她盯着我们，一脸困惑，仿佛她在问"你们在笑什么？"）。"as if she were ___"是虚拟语气，需要填入一个现在分词。选项F "asking"（问）符合语境，"as if she were asking"（仿佛她在问）是自然表达，指婴儿的表情像在问问题。干扰项：A "laugh"（笑）语义不同；I "burst"（爆发）不能接引语；E "attentively"是副词。',
             '40': '【正确答案：G. cute】空格所在句为"We all love this ___ little baby"（我们都爱这个可爱的小宝宝）。空格修饰 little baby，需要填入一个形容词。选项G "cute"（可爱的）符合语境，"cute little baby"（可爱的小宝宝）是极为常见的搭配，与文章开头"most lovely child"（最可爱的孩子）呼应。干扰项：K "bright"（明亮的）不能修饰 baby；D "grown-ups"（成年人）不能修饰 baby；B "both"（两者都）是限定词。'
         }
     },
