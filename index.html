@@ -361,22 +361,57 @@
         bindEvents();
     }
 
-    // ========== 英文句子朗读 ==========
-    window.speakSentence = function(el) {
+    // ========== 英文句子朗读（走 Cloudflare Worker TTS） ==========
+    let ttsAudio = null;
+
+    window.speakSentence = async function(el) {
         const text = decodeURIComponent(el.getAttribute('data-speak') || '');
         if (!text) return;
 
-        if ('speechSynthesis' in window) {
-            window.speechSynthesis.cancel();
-            const utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = 'en-US';
-            utterance.rate = 0.9;
-            el.classList.add('speaking');
-            utterance.onend = () => { el.classList.remove('speaking'); };
-            utterance.onerror = () => { el.classList.remove('speaking'); };
-            window.speechSynthesis.speak(utterance);
-        } else {
-            alert('您的浏览器不支持语音朗读');
+        // 防止重复点击
+        if (el.dataset.loading === '1') return;
+        el.dataset.loading = '1';
+        el.classList.add('speaking');
+
+        try {
+            // 停掉上一个正在播放的音频
+            if (ttsAudio) {
+                ttsAudio.pause();
+                ttsAudio = null;
+            }
+
+            const response = await fetch('https://api.xiemojy.mom/v1/audio/speech', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    input: text,
+                    voice: 'en-US-JennyNeural'   // 英文自然音色
+                })
+            });
+
+            if (!response.ok) throw new Error('TTS 接口返回 ' + response.status);
+
+            const blob = await response.blob();
+            const audioUrl = URL.createObjectURL(blob);
+            ttsAudio = new Audio(audioUrl);
+
+            ttsAudio.onended = () => {
+                URL.revokeObjectURL(audioUrl);
+                el.classList.remove('speaking');
+                el.dataset.loading = '';
+            };
+            ttsAudio.onerror = () => {
+                URL.revokeObjectURL(audioUrl);
+                el.classList.remove('speaking');
+                el.dataset.loading = '';
+            };
+
+            await ttsAudio.play();
+        } catch (err) {
+            console.error('TTS 播放失败:', err);
+            el.classList.remove('speaking');
+            el.dataset.loading = '';
+            alert('语音播放失败：' + err.message);
         }
     };
 
@@ -474,7 +509,19 @@
         render();
     }
 
-    window.addEventListener('load', () => setTimeout(init, 100));
+    // iOS 微信音频解锁：页面加载后预播放一段极短的静音音频
+    function unlockIOSAudio() {
+        try {
+            const silent = new Audio('data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA=');
+            silent.volume = 0;
+            silent.play().catch(() => {});
+        } catch (e) { /* 忽略 */ }
+    }
+
+    window.addEventListener('load', () => {
+        unlockIOSAudio();
+        setTimeout(init, 100);
+    });
 </script>
 </body>
 </html>
